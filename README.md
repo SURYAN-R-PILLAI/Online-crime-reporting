@@ -1,9 +1,11 @@
 # Online-crime-reporting
 Introduction
+  
   The Online Crime Reporting System is a project aimed at developing a user-friendly platform accessible to the public, facilitating the online registration of complaints. The system not only provides ease of use for individuals reporting crimes but also proves beneficial to law enforcement agencies in efficiently managing and responding to complaints at any time.
 
 Objectives:
-  User-Friendly Platform:
+  
+User-Friendly Platform:
 Develop an intuitive platform for the online reporting of crimes.
 
 Streamline Communication:
@@ -13,6 +15,7 @@ Enhance Transparency:
 Improve transparency in the investigation process for better public trust.
 
 Features:
+
 a. User Registration and Complaint Submission:
 Users can register online and submit detailed information about the crime.
 Include personal information, incident details, and any supporting documents.
@@ -49,6 +52,7 @@ Police officers update information regarding the court where the victim needs to
 Include date, time, and any additional instructions.
 
 Benefits:
+
 Quick and convenient crime reporting.
 Improved coordination between the public and law enforcement.
 Enhanced transparency in the investigation process.
