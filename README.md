@@ -54,6 +54,9 @@ Include date, time, and any additional instructions.
 Benefits:
 
 Quick and convenient crime reporting.
+
 Improved coordination between the public and law enforcement.
+
 Enhanced transparency in the investigation process.
+
 Empowerment of citizens in ensuring public safety.
