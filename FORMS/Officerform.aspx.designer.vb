@@ -32,31 +32,13 @@ Partial Public Class Officerform
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt1 control.
+    '''txtRANKO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt1 As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txt2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txt2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtRANKO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label4 control.
@@ -68,13 +50,13 @@ Partial Public Class Officerform
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt3 control.
+    '''txtNAMEO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt3 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtNAMEO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label5 control.
@@ -86,13 +68,13 @@ Partial Public Class Officerform
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL1 control.
+    '''DDL1O control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL1O As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label6 control.
@@ -104,13 +86,13 @@ Partial Public Class Officerform
     Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt4 control.
+    '''txtMNO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt4 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtMNO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label7 control.
@@ -122,13 +104,13 @@ Partial Public Class Officerform
     Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL2 control.
+    '''DDL2O control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL2 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL2O As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label8 control.
@@ -140,20 +122,20 @@ Partial Public Class Officerform
     Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt5 control.
+    '''txtEMAILO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt5 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtEMAILO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BT1 control.
+    '''BT1O control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BT1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BT1O As Global.System.Web.UI.WebControls.Button
 End Class

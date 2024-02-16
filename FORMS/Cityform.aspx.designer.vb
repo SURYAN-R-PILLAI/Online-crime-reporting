@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Locationform
+Partial Public Class Cityform
 
     '''<summary>
     '''Label1 control.
@@ -32,13 +32,13 @@ Partial Public Class Locationform
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtLNL control.
+    '''txtCI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtLNL As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtCI As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label3 control.
@@ -50,13 +50,13 @@ Partial Public Class Locationform
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL1L control.
+    '''DDL1CI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL1L As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL1CI As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label4 control.
@@ -68,56 +68,20 @@ Partial Public Class Locationform
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL2L control.
+    '''DDL2CI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL2L As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL2CI As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Label5 control.
+    '''BTN1CI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtPINCODEL control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtPINCODEL As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label6 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''DDL3L control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents DDL3L As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''BT1L control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents BT1L As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BTN1CI As Global.System.Web.UI.WebControls.Button
 End Class

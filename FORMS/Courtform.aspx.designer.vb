@@ -32,13 +32,13 @@ Partial Public Class Courtform
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt1 control.
+    '''txtCNCO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtCNCO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label3 control.
@@ -50,13 +50,13 @@ Partial Public Class Courtform
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL1 control.
+    '''DDL1CO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL1CO As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label4 control.
@@ -68,13 +68,13 @@ Partial Public Class Courtform
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt2 control.
+    '''txtVNCO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtVNCO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label5 control.
@@ -86,13 +86,13 @@ Partial Public Class Courtform
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt3 control.
+    '''txtIPCCO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt3 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtIPCCO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label6 control.
@@ -104,13 +104,13 @@ Partial Public Class Courtform
     Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt4 control.
+    '''txtMOCO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt4 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtMOCO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label7 control.
@@ -122,13 +122,13 @@ Partial Public Class Courtform
     Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt5 control.
+    '''txtDATECO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt5 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtDATECO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label8 control.
@@ -140,20 +140,20 @@ Partial Public Class Courtform
     Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt6 control.
+    '''txtVERDICTCO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt6 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtVERDICTCO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BT1 control.
+    '''BT1CO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BT1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BT1CO As Global.System.Web.UI.WebControls.Button
 End Class

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Crimereporting.Master" CodeBehind="Policedeptform.aspx.vb" Inherits="FORMS.Policedeptform" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Crimereporting.Master" CodeBehind="policecircleform.aspx.vb" Inherits="FORMS.Policedeptform" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
@@ -28,7 +28,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label1" runat="server" Text="DEPARTMENT DETAILS"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="CIRCLE DETAILS"></asp:Label>
     <br />
     <br />
     <table cellpadding="0" class="auto-style1">
@@ -38,10 +38,10 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label2" runat="server" Text="DEPARTMENT NAME"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="CIRCLE AREA"></asp:Label>
             </td>
             <td class="auto-style2">
-                <asp:TextBox ID="txtDND" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
+                <asp:TextBox ID="txtCAP" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -50,10 +50,10 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label3" runat="server" Text="DEPATMENT HEAD"></asp:Label>
+                <asp:Label ID="Label3" runat="server" Text=" HEAD NAME"></asp:Label>
             </td>
             <td class="auto-style2">
-                <asp:TextBox ID="txtDHD" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
+                <asp:TextBox ID="txtHNP" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -62,10 +62,11 @@
         </tr>
         <tr>
             <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label4" runat="server" Text="CITY"></asp:Label>
+                <asp:Label ID="Label4" runat="server" Text="DISTRICT"></asp:Label>
             </td>
             <td class="auto-style6">
-                <asp:TextBox ID="txtCITYD" runat="server" Width="191px"></asp:TextBox>
+                <asp:DropDownList ID="DDL1P" runat="server" Height="30px" Width="197px" AutoPostBack="True">
+                </asp:DropDownList>
             </td>
         </tr>
         <tr>
@@ -74,16 +75,10 @@
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label5" runat="server" Text="DISTRICT"></asp:Label>
+                <asp:Label ID="Label5" runat="server" Text="CITY"></asp:Label>
             </td>
             <td>
-                <asp:DropDownList ID="DDL1D" runat="server" Height="30px" Width="197px">
-                    <asp:ListItem>SELECT</asp:ListItem>
-                    <asp:ListItem>KOTTAYAM</asp:ListItem>
-                    <asp:ListItem>ERNAKULAM</asp:ListItem>
-                    <asp:ListItem>IDUKKI</asp:ListItem>
-                    <asp:ListItem>KANNUR</asp:ListItem>
-                    <asp:ListItem>THIRUVANANTHAPURAM</asp:ListItem>
+                <asp:DropDownList ID="DDL2P" runat="server" Height="30px" Width="197px" AutoPostBack="True">
                 </asp:DropDownList>
             </td>
         </tr>
@@ -96,7 +91,7 @@
                 <asp:Label ID="Label6" runat="server" Text="PINCODE"></asp:Label>
             </td>
             <td class="auto-style2">
-                <asp:TextBox ID="txtPED" runat="server" Width="191px"></asp:TextBox>
+                <asp:TextBox ID="txtPINCODEP" runat="server" Width="191px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -108,7 +103,7 @@
                 <asp:Label ID="Label7" runat="server" Text="PHONE NO"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td>
-                <asp:TextBox ID="txtPHNOD" runat="server" Width="191px"></asp:TextBox>
+                <asp:TextBox ID="txtPHNOP" runat="server" Width="191px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -126,7 +121,7 @@
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td>
-                <asp:Button ID="BT1D" runat="server" Text="SUBMIT" Width="147px" />
+                <asp:Button ID="BT1P" runat="server" Text="SUBMIT" Width="147px" />
             </td>
         </tr>
         <tr>

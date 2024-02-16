@@ -39,10 +39,10 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label2" runat="server" Text="DEPARTMENT NAME"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="CIRCLE AREA"></asp:Label>
             </td>
             <td class="auto-style2">
-                <asp:TextBox ID="txtDNT" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
+                <asp:TextBox ID="txtCAT" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -50,8 +50,7 @@
             <td class="auto-style2"></td>
         </tr>
         <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label3" runat="server" Text="COMPLAINT ID"></asp:Label>
+            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label3" runat="server" Text="COMPLAINANT NAME"></asp:Label>
             </td>
             <td class="auto-style2">
                 <asp:DropDownList ID="DDL1T" runat="server" Height="17px" Width="198px">
@@ -75,10 +74,9 @@
             <td class="auto-style2"></td>
         </tr>
         <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label5" runat="server" Text="OFFICER ID"></asp:Label>
+            <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label5" runat="server" Text="OFFICER NAME"></asp:Label>
             &nbsp;&nbsp;&nbsp; </td>
-            <td>
+            <td class="auto-style6">
                 <asp:DropDownList ID="DDL2T" runat="server" Height="18px" Width="198px">
                 </asp:DropDownList>
             </td>
@@ -104,7 +102,8 @@
                 <asp:Label ID="Label7" runat="server" Text="CITY"></asp:Label>
             </td>
             <td class="auto-style2">
-                <asp:TextBox ID="txtCITYT" runat="server" Width="191px"></asp:TextBox>
+                <asp:DropDownList ID="DDL3T" runat="server" Height="18px" Width="198px">
+                </asp:DropDownList>
             </td>
         </tr>
         <tr>
@@ -116,7 +115,7 @@
                 <asp:Label ID="Label8" runat="server" Text="PINCODE"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td>
-                <asp:TextBox ID="txtPET" runat="server" Width="191px"></asp:TextBox>
+                <asp:TextBox ID="txtPINCODET" runat="server" Width="191px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -146,7 +145,7 @@
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td>
-                <asp:Button ID="BT1T" runat="server" Text="SUBMIT" Width="147px" />
+                <asp:Button ID="BT1T" runat="server" Text="SUBMIT" Width="147px" style="height: 29px" />
             </td>
         </tr>
         <tr>

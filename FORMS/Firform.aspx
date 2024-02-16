@@ -27,10 +27,7 @@
             height: 27px;
             width: 198px;
         }
-        .auto-style8 {
-            height: 24px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -56,13 +53,7 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:DropDownList ID="DDL1" runat="server" Height="35px" Width="624px">
-                    <asp:ListItem>SELECT</asp:ListItem>
-                    <asp:ListItem>KOTTAYAM</asp:ListItem>
-                    <asp:ListItem>ERNAKULAM</asp:ListItem>
-                    <asp:ListItem>IDUKKI</asp:ListItem>
-                    <asp:ListItem>KANNUR</asp:ListItem>
-                    <asp:ListItem>THIRUVANANTHAPURAM</asp:ListItem>
+                <asp:DropDownList ID="DDL1F" runat="server" Height="35px" Width="624px">
                 </asp:DropDownList>
             </td>
             <td class="auto-style2">&nbsp;</td>
@@ -83,27 +74,10 @@
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt1" runat="server" style="margin-bottom: 0px" Width="615px"></asp:TextBox>
-            </td>
-            <td class="auto-style7">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td class="auto-style7">&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label4" runat="server" Text="STATION ID"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:DropDownList ID="DDL2" runat="server" Height="16px" Width="623px">
+                <asp:DropDownList ID="DDL2F" runat="server" Height="16px" Width="623px">
                 </asp:DropDownList>
             </td>
+            <td class="auto-style7">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;</td>
@@ -121,7 +95,7 @@
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt2" runat="server" Height="144px" Width="408px"></asp:TextBox>
+                <asp:TextBox ID="txtFRF" runat="server" Height="144px" Width="408px" TextMode="MultiLine"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style7">&nbsp;</td>
         </tr>
@@ -141,7 +115,7 @@
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt3" runat="server" Width="615px"></asp:TextBox>
+                <asp:TextBox ID="txtFDF" runat="server" Width="615px"></asp:TextBox>
             </td>
             <td class="auto-style7">&nbsp;</td>
         </tr>
@@ -161,7 +135,7 @@
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt4" runat="server" Width="615px"></asp:TextBox>
+                <asp:TextBox ID="txtPOF" runat="server" Width="615px"></asp:TextBox>
             </td>
             <td class="auto-style7">&nbsp;</td>
         </tr>
@@ -181,7 +155,7 @@
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt5" runat="server" Width="615px"></asp:TextBox>
+                <asp:TextBox ID="txtIPCF" runat="server" Width="615px"></asp:TextBox>
             </td>
             <td class="auto-style7">&nbsp;</td>
         </tr>
@@ -201,7 +175,7 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt6" runat="server" Width="615px"></asp:TextBox>
+                <asp:TextBox ID="txtCSF" runat="server" Width="615px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style2"></td>
         </tr>
@@ -221,7 +195,7 @@
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt7" runat="server" Width="615px"></asp:TextBox>
+                <asp:TextBox ID="txtMOF" runat="server" Width="615px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style7">&nbsp;</td>
         </tr>
@@ -241,7 +215,7 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt8" runat="server" Height="144px" Width="408px"></asp:TextBox>
+                <asp:TextBox ID="txtEVIDENCEF" runat="server" Height="144px" Width="408px" TextMode="MultiLine"></asp:TextBox>
             </td>
             <td class="auto-style2">&nbsp;</td>
         </tr>
@@ -261,46 +235,9 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt9" runat="server" Width="615px"></asp:TextBox>
-            </td>
-            <td class="auto-style2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;</td>
-            <td class="auto-style2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label13" runat="server" Text="COMPLAINT ID"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:DropDownList ID="DDL3" runat="server" Height="25px" Width="624px">
+                <asp:DropDownList ID="DDL3F" runat="server" Height="25px" Width="624px">
                 </asp:DropDownList>
             </td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;</td>
-            <td class="auto-style2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label14" runat="server" Text="OFFICER INCHARGE,POLICE STATION"></asp:Label>
-            </td>
-            <td class="auto-style2"></td>
-        </tr>
-        <tr>
-            <td class="auto-style3"></td>
-            <td class="auto-style2"></td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txt10" runat="server" Width="615px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style2">&nbsp;</td>
         </tr>
         <tr>
@@ -309,15 +246,14 @@
         </tr>
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label15" runat="server" Text="OFFICER ID"></asp:Label>
+                <asp:Label ID="Label15" runat="server" Text="OFFICER NAME"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
         </tr>
         <tr>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:DropDownList ID="DDL4" runat="server" Height="17px" Width="624px">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:DropDownList ID="DDL4F" runat="server" Height="17px" Width="624px">
                 </asp:DropDownList>
             </td>
         </tr>
@@ -327,7 +263,7 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="BT1" runat="server" Text="ADD" Width="147px" />
+                <asp:Button ID="BT1F" runat="server" Text="ADD" Width="147px" />
             </td>
             <td class="auto-style2">&nbsp;</td>
         </tr>

@@ -50,13 +50,13 @@ Partial Public Class Complaintsubmissionform
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtFNC control.
+    '''DDL1C control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtFNC As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDL1C As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''txtEMAILC control.
@@ -95,13 +95,13 @@ Partial Public Class Complaintsubmissionform
     Protected WithEvents txtPHNOC As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''DDL1C control.
+    '''txtFNC control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL1C As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents txtFNC As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label7 control.
@@ -212,13 +212,13 @@ Partial Public Class Complaintsubmissionform
     Protected WithEvents Label13 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtDNC control.
+    '''txtDESCRIPTIONC control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtDNC As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtDESCRIPTIONC As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''BT1C control.

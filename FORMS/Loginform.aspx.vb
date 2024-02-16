@@ -9,7 +9,7 @@
 
     End Sub
 
-    Protected Sub BT1_Click(sender As Object, e As EventArgs) Handles BT1.Click
+    Protected Sub BT1_Click(sender As Object, e As EventArgs) Handles BT1LO.Click
 
     End Sub
 End Class

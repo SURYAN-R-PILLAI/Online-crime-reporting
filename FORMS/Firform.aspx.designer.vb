@@ -32,13 +32,13 @@ Partial Public Class Firform
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL1 control.
+    '''DDL1F control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL1F As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label3 control.
@@ -50,31 +50,13 @@ Partial Public Class Firform
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt1 control.
+    '''DDL2F control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt1 As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''DDL2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents DDL2 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL2F As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label5 control.
@@ -86,13 +68,13 @@ Partial Public Class Firform
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt2 control.
+    '''txtFRF control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtFRF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label6 control.
@@ -104,13 +86,13 @@ Partial Public Class Firform
     Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt3 control.
+    '''txtFDF control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt3 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtFDF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label7 control.
@@ -122,13 +104,13 @@ Partial Public Class Firform
     Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt4 control.
+    '''txtPOF control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt4 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtPOF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label8 control.
@@ -140,13 +122,13 @@ Partial Public Class Firform
     Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt5 control.
+    '''txtIPCF control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt5 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtIPCF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label9 control.
@@ -158,13 +140,13 @@ Partial Public Class Firform
     Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt6 control.
+    '''txtCSF control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt6 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtCSF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label10 control.
@@ -176,13 +158,13 @@ Partial Public Class Firform
     Protected WithEvents Label10 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt7 control.
+    '''txtMOF control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt7 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtMOF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label11 control.
@@ -194,13 +176,13 @@ Partial Public Class Firform
     Protected WithEvents Label11 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt8 control.
+    '''txtEVIDENCEF control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt8 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtEVIDENCEF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label12 control.
@@ -212,49 +194,13 @@ Partial Public Class Firform
     Protected WithEvents Label12 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt9 control.
+    '''DDL3F control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt9 As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label13 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label13 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''DDL3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents DDL3 As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Label14 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label14 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txt10 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txt10 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDL3F As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label15 control.
@@ -266,20 +212,20 @@ Partial Public Class Firform
     Protected WithEvents Label15 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL4 control.
+    '''DDL4F control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL4 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL4F As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''BT1 control.
+    '''BT1F control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BT1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BT1F As Global.System.Web.UI.WebControls.Button
 End Class

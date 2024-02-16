@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Loginform
+Partial Public Class Districtform
 
     '''<summary>
     '''Label1 control.
@@ -32,13 +32,13 @@ Partial Public Class Loginform
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtEMAILLO control.
+    '''txtDI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtEMAILLO As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtDI As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label3 control.
@@ -50,47 +50,20 @@ Partial Public Class Loginform
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtPASSLO control.
+    '''DDL1DI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtPASSLO As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDL1DI As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''LB1 control.
+    '''BTN1DI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LB1 As Global.System.Web.UI.WebControls.LinkButton
-
-    '''<summary>
-    '''BT1LO control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents BT1LO As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Label4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''LB2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents LB2 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents BTN1DI As Global.System.Web.UI.WebControls.Button
 End Class

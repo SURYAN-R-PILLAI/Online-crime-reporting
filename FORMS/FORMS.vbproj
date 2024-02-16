@@ -82,14 +82,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Arrestform.aspx" />
+    <Content Include="Cityform.aspx" />
     <Content Include="Complaintsubmissionform.aspx" />
     <Content Include="Courtform.aspx" />
+    <Content Include="Districtform.aspx" />
     <Content Include="Firform.aspx" />
     <Content Include="Investigationform.aspx" />
     <Content Include="Locationform.aspx" />
     <Content Include="Loginform.aspx" />
     <Content Include="Officerform.aspx" />
-    <Content Include="Policedeptform.aspx" />
+    <Content Include="policecircleform.aspx" />
+    <Content Include="Stateform.aspx" />
     <Content Include="Stationform.aspx" />
     <Content Include="Teamassignform.aspx" />
     <Content Include="userreg.aspx" />
@@ -101,21 +104,28 @@
     </Compile>
     <Compile Include="Arrestform.aspx.vb">
       <DependentUpon>Arrestform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cityform.aspx.designer.vb">
+      <DependentUpon>Cityform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cityform.aspx.vb">
+      <DependentUpon>Cityform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Complaintsubmissionform.aspx.designer.vb">
       <DependentUpon>Complaintsubmissionform.aspx</DependentUpon>
     </Compile>
     <Compile Include="Complaintsubmissionform.aspx.vb">
       <DependentUpon>Complaintsubmissionform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Courtform.aspx.designer.vb">
       <DependentUpon>Courtform.aspx</DependentUpon>
     </Compile>
     <Compile Include="Courtform.aspx.vb">
       <DependentUpon>Courtform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Crimereporting.Master.designer.vb">
       <DependentUpon>Crimereporting.Master</DependentUpon>
@@ -124,26 +134,33 @@
       <DependentUpon>Crimereporting.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Districtform.aspx.designer.vb">
+      <DependentUpon>Districtform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Districtform.aspx.vb">
+      <DependentUpon>Districtform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Firform.aspx.designer.vb">
       <DependentUpon>Firform.aspx</DependentUpon>
     </Compile>
     <Compile Include="Firform.aspx.vb">
       <DependentUpon>Firform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Investigationform.aspx.designer.vb">
       <DependentUpon>Investigationform.aspx</DependentUpon>
     </Compile>
     <Compile Include="Investigationform.aspx.vb">
       <DependentUpon>Investigationform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Locationform.aspx.designer.vb">
       <DependentUpon>Locationform.aspx</DependentUpon>
     </Compile>
     <Compile Include="Locationform.aspx.vb">
       <DependentUpon>Locationform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Loginform.aspx.designer.vb">
       <DependentUpon>Loginform.aspx</DependentUpon>
@@ -176,35 +193,42 @@
     </Compile>
     <Compile Include="Officerform.aspx.vb">
       <DependentUpon>Officerform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Policedeptform.aspx.designer.vb">
-      <DependentUpon>Policedeptform.aspx</DependentUpon>
+    <Compile Include="policecircleform.aspx.designer.vb">
+      <DependentUpon>policecircleform.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Policedeptform.aspx.vb">
-      <DependentUpon>Policedeptform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+    <Compile Include="policecircleform.aspx.vb">
+      <DependentUpon>policecircleform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stateform.aspx.designer.vb">
+      <DependentUpon>Stateform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stateform.aspx.vb">
+      <DependentUpon>Stateform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Stationform.aspx.designer.vb">
       <DependentUpon>Stationform.aspx</DependentUpon>
     </Compile>
     <Compile Include="Stationform.aspx.vb">
       <DependentUpon>Stationform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Teamassignform.aspx.designer.vb">
       <DependentUpon>Teamassignform.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teamassignform.aspx.vb">
       <DependentUpon>Teamassignform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="userreg.aspx.designer.vb">
       <DependentUpon>userreg.aspx</DependentUpon>
     </Compile>
     <Compile Include="userreg.aspx.vb">
       <DependentUpon>userreg.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

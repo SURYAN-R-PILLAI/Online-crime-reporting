@@ -32,13 +32,13 @@ Partial Public Class Investigationform
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt1 control.
+    '''txtCAI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtCAI As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label3 control.
@@ -50,13 +50,13 @@ Partial Public Class Investigationform
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt2 control.
+    '''txtSNI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtSNI As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label4 control.
@@ -68,13 +68,13 @@ Partial Public Class Investigationform
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL1 control.
+    '''DDL1I control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL1I As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label5 control.
@@ -86,13 +86,13 @@ Partial Public Class Investigationform
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt3 control.
+    '''txtOII control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt3 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtOII As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label6 control.
@@ -104,13 +104,13 @@ Partial Public Class Investigationform
     Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL2 control.
+    '''DDL2I control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL2 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL2I As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label7 control.
@@ -122,13 +122,13 @@ Partial Public Class Investigationform
     Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt4 control.
+    '''txtVNI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt4 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtVNI As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label8 control.
@@ -140,13 +140,13 @@ Partial Public Class Investigationform
     Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt5 control.
+    '''txtDETAILSI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt5 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtDETAILSI As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label9 control.
@@ -158,20 +158,20 @@ Partial Public Class Investigationform
     Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txt6 control.
+    '''txtEVIDENCEI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt6 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtEVIDENCEI As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BT1 control.
+    '''BT1I control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BT1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BT1I As Global.System.Web.UI.WebControls.Button
 End Class

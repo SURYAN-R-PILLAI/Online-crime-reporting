@@ -68,13 +68,13 @@ Partial Public Class Stationform
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtCITYS control.
+    '''DDL1S control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtCITYS As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDL1S As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label5 control.
@@ -86,13 +86,13 @@ Partial Public Class Stationform
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL1S control.
+    '''DDL2S control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL1S As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL2S As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label6 control.

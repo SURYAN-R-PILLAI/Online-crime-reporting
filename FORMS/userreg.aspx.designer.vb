@@ -185,13 +185,49 @@ Partial Public Class userreg
     Protected WithEvents txtHNU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''txtCITYU control.
+    '''DDL2U control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtCITYU As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDL2U As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Label15 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label15 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Label16 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label16 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''DDL3U control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DDL3U As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''txtPINCODEU control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtPINCODEU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label11 control.
@@ -203,49 +239,22 @@ Partial Public Class userreg
     Protected WithEvents Label11 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Label12 control.
+    '''Label17 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label12 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label17 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL1USER control.
+    '''DDL1U control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL1USER As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''txtPEU control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtPEU As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label13 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label13 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Label14 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label14 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents DDL1U As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''txtPASSU control.
@@ -257,6 +266,15 @@ Partial Public Class userreg
     Protected WithEvents txtPASSU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Label18 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label18 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''txtCPASSU control.
     '''</summary>
     '''<remarks>
@@ -266,11 +284,11 @@ Partial Public Class userreg
     Protected WithEvents txtCPASSU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BTN1USER control.
+    '''BTN1U control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BTN1USER As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BTN1U As Global.System.Web.UI.WebControls.Button
 End Class

@@ -32,13 +32,13 @@ Partial Public Class Policedeptform
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtDND control.
+    '''txtCAP control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtDND As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtCAP As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label3 control.
@@ -50,13 +50,13 @@ Partial Public Class Policedeptform
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtDHD control.
+    '''txtHNP control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtDHD As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtHNP As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label4 control.
@@ -68,13 +68,13 @@ Partial Public Class Policedeptform
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtCITYD control.
+    '''DDL1P control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtCITYD As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDL1P As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label5 control.
@@ -86,13 +86,13 @@ Partial Public Class Policedeptform
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DDL1D control.
+    '''DDL2P control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL1D As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DDL2P As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label6 control.
@@ -104,13 +104,13 @@ Partial Public Class Policedeptform
     Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtPED control.
+    '''txtPINCODEP control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtPED As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtPINCODEP As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label7 control.
@@ -122,20 +122,20 @@ Partial Public Class Policedeptform
     Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtPHNOD control.
+    '''txtPHNOP control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtPHNOD As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtPHNOP As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BT1D control.
+    '''BT1P control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BT1D As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BT1P As Global.System.Web.UI.WebControls.Button
 End Class

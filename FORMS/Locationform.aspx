@@ -49,10 +49,11 @@
             <td class="auto-style2">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label3" runat="server" Text="CITY"></asp:Label>
+            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label3" runat="server" Text="STATE"></asp:Label>
             </td>
             <td class="auto-style2">
-                <asp:TextBox ID="txtCITYL" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
+                <asp:DropDownList ID="DDL1L" runat="server" Height="19px" Width="198px" AutoPostBack="True">
+                </asp:DropDownList>
             </td>
         </tr>
         <tr>
@@ -64,13 +65,7 @@
                 <asp:Label ID="Label4" runat="server" Text="DISTRICT"></asp:Label>
             </td>
             <td class="auto-style6">
-                <asp:DropDownList ID="DDL1L" runat="server" Height="19px" Width="198px">
-                    <asp:ListItem>SELECT</asp:ListItem>
-                    <asp:ListItem>KOTTAYAM</asp:ListItem>
-                    <asp:ListItem>ERNAKULAM</asp:ListItem>
-                    <asp:ListItem>IDUKKI</asp:ListItem>
-                    <asp:ListItem>KANNUR</asp:ListItem>
-                    <asp:ListItem>THIRUVANANTHAPURAM</asp:ListItem>
+                <asp:DropDownList ID="DDL2L" runat="server" Height="19px" Width="198px" AutoPostBack="True">
                 </asp:DropDownList>
             </td>
         </tr>
@@ -83,7 +78,7 @@
                 <asp:Label ID="Label5" runat="server" Text="PINCODE"></asp:Label>
             </td>
             <td class="auto-style2">
-                <asp:TextBox ID="txtPEL" runat="server" Width="191px"></asp:TextBox>
+                <asp:TextBox ID="txtPINCODEL" runat="server" Width="191px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -92,36 +87,15 @@
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label6" runat="server" Text="STATE"></asp:Label>
+                <asp:Label ID="Label6" runat="server" Text="CITY"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td>
-                <asp:DropDownList ID="DDL2L" runat="server" Height="21px" Width="198px">
-                    <asp:ListItem>SELECT</asp:ListItem>
-                    <asp:ListItem>KERALA</asp:ListItem>
-                    <asp:ListItem>KARNATAKA</asp:ListItem>
-                    <asp:ListItem>GUJARAT</asp:ListItem>
-                    <asp:ListItem>TAMIL NADU</asp:ListItem>
+                <asp:DropDownList ID="DDL3L" runat="server" Height="21px" Width="198px" AutoPostBack="True">
                 </asp:DropDownList>
             </td>
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label7" runat="server" Text="COUNTRY"></asp:Label>
-            </td>
-            <td class="auto-style2">
-                <asp:TextBox ID="txtCYL" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style3"></td>
-            <td class="auto-style2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td>&nbsp;</td>
         </tr>
         <tr>

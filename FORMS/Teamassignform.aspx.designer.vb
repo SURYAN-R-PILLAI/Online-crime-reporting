@@ -32,13 +32,13 @@ Partial Public Class Teamassignform
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtDNT control.
+    '''txtCAT control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtDNT As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtCAT As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label3 control.
@@ -122,13 +122,13 @@ Partial Public Class Teamassignform
     Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtCITYT control.
+    '''DDL3T control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtCITYT As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDL3T As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Label8 control.
@@ -140,13 +140,13 @@ Partial Public Class Teamassignform
     Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtPET control.
+    '''txtPINCODET control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtPET As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtPINCODET As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label9 control.

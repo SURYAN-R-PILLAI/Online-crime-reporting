@@ -1,8 +1,47 @@
-﻿Public Class Courtform
+﻿Imports System.Data.SqlClient
+Imports System.Data
+Public Class Courtform
     Inherits System.Web.UI.Page
-
+    Dim con As New SqlConnection
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        con.ConnectionString = " Data Source = LAPTOP-3KTJE2ED\SQLEXPRESS; Initial Catalog = crimedb; User id = sa; Password = 123;"
+        con.Open()
+        If Not Me.IsPostBack Then
+            bindComplaint()
+        End If
+    End Sub
+
+    Protected Sub BT1CO_Click(sender As Object, e As EventArgs) Handles BT1CO.Click
+        Dim Instr As String
+        Instr = " Insert into Court_table(Court_name,Complaint_id,Victim_name,Ipc_code_section,Mode_of_operation,Date,Verdict) Values('" + txtCNCO.Text + "'," + DDL1CO.SelectedValue + ",'" + txtVNCO.Text + "','" + txtIPCCO.Text + "','" + txtMOCO.Text + "','" + txtDATECO.Text + "','" + txtVERDICTCO.Text + "')"
+        Dim cmpCourt As SqlCommand = New SqlCommand(Instr, con)
+        cmpCourt.ExecuteNonQuery()
+        Response.Write("<script>alert('Data saved successfully');</script>")
+        txtCNCO.Text = " "
+        txtVNCO.Text = " "
+        txtIPCCO.Text = " "
+        txtMOCO.Text = " "
+        txtDATECO.Text = " "
+        txtVERDICTCO.Text = " "
+    End Sub
+    Sub bindComplaint()
+        Dim str As String
+        str = "select Complaint_id,Full_name from Complaint_table"
+        Dim com As SqlCommand = New SqlCommand(str, con)
+        Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
+        Dim ds As DataTable = New DataTable
+        sqlda.Fill(ds)
+        DDL1CO.Items.Clear()
+        DDL1CO.Items.Add("--Select--")
+        DDL1CO.DataTextField = "Full_name"
+        DDL1CO.DataValueField = "Complaint_id"
+        DDL1CO.DataSource = ds
+        DDL1CO.DataBind()
 
     End Sub
 
+    Protected Sub DDL1CO_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDL1CO.SelectedIndexChanged
+        bindComplaint()
+
+    End Sub
 End Class

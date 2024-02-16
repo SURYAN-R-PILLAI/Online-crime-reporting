@@ -45,7 +45,7 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label3" runat="server" Text="FULL NAME"></asp:Label>
+                <asp:Label ID="Label3" runat="server" Text="COMPLAINANT NAME"></asp:Label>
             </td>
             <td class="auto-style2">
                 <asp:Label ID="Label4" runat="server" Text="EMAIL"></asp:Label>
@@ -57,7 +57,8 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txtFNC" runat="server" Width="191px"></asp:TextBox>
+                <asp:DropDownList ID="DDL1C" runat="server" Width="191px">
+                </asp:DropDownList>
             </td>
             <td class="auto-style2">
                 <asp:TextBox ID="txtEMAILC" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
@@ -72,7 +73,7 @@
                 <asp:Label ID="Label5" runat="server" Text="PHONE NUMBER"></asp:Label>
             </td>
             <td class="auto-style6">
-                <asp:Label ID="Label6" runat="server" Text="USER ID"></asp:Label>
+                <asp:Label ID="Label6" runat="server" Text="FULL NAME"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -84,8 +85,7 @@
                 <asp:TextBox ID="txtPHNOC" runat="server" Width="191px"></asp:TextBox>
             </td>
             <td class="auto-style2">
-                <asp:DropDownList ID="DDL1C" runat="server" Width="191px">
-                </asp:DropDownList>
+                <asp:TextBox ID="txtFNC" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -154,7 +154,7 @@
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </td>
             <td>
-                <asp:Label ID="Label12" runat="server" Text="LOCATION ID"></asp:Label>
+                <asp:Label ID="Label12" runat="server" Text="LOCATION "></asp:Label>
             </td>
         </tr>
         <tr>
@@ -180,7 +180,7 @@
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txtDNC" runat="server" Height="120px" Width="272px"></asp:TextBox>
+                <asp:TextBox ID="txtDESCRIPTIONC" runat="server" Height="120px" Width="272px" TextMode="MultiLine"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -203,8 +203,8 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style3"></td>
+            <td class="auto-style2"></td>
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;</td>
