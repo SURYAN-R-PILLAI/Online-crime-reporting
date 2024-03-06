@@ -2,20 +2,19 @@
 Imports System.Data
 Public Class Arrestform
     Inherits System.Web.UI.Page
-    Dim con As New SqlConnection
+    Dim co As test = New test
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        con.ConnectionString = " Data Source = LAPTOP-3KTJE2ED\SQLEXPRESS; Initial Catalog = crimedb; User id = sa; Password = 123;"
-        con.Open()
         If Not Me.IsPostBack Then
             bindComplaint()
             bindOfficer()
+            bindgrid()
         End If
     End Sub
 
     Protected Sub BT1A_Click(sender As Object, e As EventArgs) Handles BT1A.Click
         Dim Instr As String
         Instr = " Insert into Arrest_table(Victim_name,Complaint_id,Mode_of_operation,Ipc_code_section,Officer_id,Place_of_arrest,Date) Values('" + txtVNA.Text + "'," + DDL1A.SelectedValue + ",'" + txtMOA.Text + "','" + txtIPCA.Text + "'," + DDL2A.SelectedValue + ",'" + txtPAA.Text + "','" + txtDATEA.Text + "')"
-        Dim cmpArrest As SqlCommand = New SqlCommand(Instr, con)
+        Dim cmpArrest As SqlCommand = New SqlCommand(Instr, co.connect())
         cmpArrest.ExecuteNonQuery()
         Response.Write("<script>alert('Data saved successfully');</script>")
         txtVNA.Text = " "
@@ -23,11 +22,12 @@ Public Class Arrestform
         txtIPCA.Text = " "
         txtPAA.Text = " "
         txtDATEA.Text = " "
+        bindgrid()
     End Sub
     Sub bindComplaint()
         Dim str As String
         str = "select Complaint_id,Full_name from Complaint_table"
-        Dim com As SqlCommand = New SqlCommand(str, con)
+        Dim com As SqlCommand = New SqlCommand(str, co.connect())
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim ds As DataTable = New DataTable
         sqlda.Fill(ds)
@@ -42,7 +42,7 @@ Public Class Arrestform
     Sub bindOfficer()
         Dim str As String
         str = "select Officer_id,Name from Officer_table"
-        Dim com As SqlCommand = New SqlCommand(str, con)
+        Dim com As SqlCommand = New SqlCommand(str, co.connect())
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim ds As DataTable = New DataTable
         sqlda.Fill(ds)
@@ -54,14 +54,20 @@ Public Class Arrestform
         DDL2A.DataBind()
 
     End Sub
+    Public Sub bindgrid()
 
-    Protected Sub DDL1A_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDL1A.SelectedIndexChanged
-        bindComplaint()
+        Dim ap As DataTable = New DataTable
+        Dim str As String
+        str = "select Victim_name,Mode_of_operation,Ipc_code_section,Place_of_arrest,Date from Arrest_table"
+        Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
+        Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
+        ad.Fill(ap)
+        GVA.DataSource = ap
+        GVA.DataBind()
 
     End Sub
-
-    Protected Sub DDL2A_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDL2A.SelectedIndexChanged
-        bindOfficer()
-
+    Protected Sub GVA_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles GVA.PageIndexChanging
+        GVA.PageIndex = e.NewPageIndex
+        bindgrid()
     End Sub
 End Class

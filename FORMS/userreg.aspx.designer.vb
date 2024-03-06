@@ -14,31 +14,40 @@ Option Explicit On
 Partial Public Class userreg
 
     '''<summary>
-    '''Label1 control.
+    '''Head1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Head1 As Global.System.Web.UI.HtmlControls.HtmlHead
 
     '''<summary>
-    '''Label2 control.
+    '''form1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Label3 control.
+    '''ScriptManager1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
+
+    '''<summary>
+    '''Panel1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''txtFNU control.
@@ -50,6 +59,15 @@ Partial Public Class userreg
     Protected WithEvents txtFNU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Panel17 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel17 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''txtLNU control.
     '''</summary>
     '''<remarks>
@@ -59,22 +77,13 @@ Partial Public Class userreg
     Protected WithEvents txtLNU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label4 control.
+    '''Panel2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Label5 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Panel2 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''txtEMAILU control.
@@ -86,6 +95,15 @@ Partial Public Class userreg
     Protected WithEvents txtEMAILU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Panel15 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel15 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''txtPHNOU control.
     '''</summary>
     '''<remarks>
@@ -95,22 +113,13 @@ Partial Public Class userreg
     Protected WithEvents txtPHNOU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label6 control.
+    '''Panel19 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Label7 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Panel19 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''txtDOBU control.
@@ -122,6 +131,15 @@ Partial Public Class userreg
     Protected WithEvents txtDOBU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Panel20 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel20 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''txtAADHARU control.
     '''</summary>
     '''<remarks>
@@ -131,13 +149,31 @@ Partial Public Class userreg
     Protected WithEvents txtAADHARU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label8 control.
+    '''Panel3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Panel3 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Panel4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel4 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Panel5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel5 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''RB1USER control.
@@ -149,6 +185,15 @@ Partial Public Class userreg
     Protected WithEvents RB1USER As Global.System.Web.UI.WebControls.RadioButton
 
     '''<summary>
+    '''Panel6 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel6 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''RB2USER control.
     '''</summary>
     '''<remarks>
@@ -158,22 +203,13 @@ Partial Public Class userreg
     Protected WithEvents RB2USER As Global.System.Web.UI.WebControls.RadioButton
 
     '''<summary>
-    '''Label9 control.
+    '''Panel7 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Label10 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label10 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Panel7 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''txtHNU control.
@@ -185,31 +221,13 @@ Partial Public Class userreg
     Protected WithEvents txtHNU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''DDL2U control.
+    '''Panel21 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDL2U As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Label15 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label15 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Label16 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label16 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Panel21 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''DDL3U control.
@@ -221,31 +239,13 @@ Partial Public Class userreg
     Protected WithEvents DDL3U As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''txtPINCODEU control.
+    '''Panel22 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtPINCODEU As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label11 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label11 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Label17 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label17 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Panel22 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''DDL1U control.
@@ -257,6 +257,51 @@ Partial Public Class userreg
     Protected WithEvents DDL1U As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''Panel23 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel23 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''DDL2U control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DDL2U As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Panel8 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel8 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''txtPINCODEU control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtPINCODEU As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Panel9 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel9 As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''txtPASSU control.
     '''</summary>
     '''<remarks>
@@ -266,13 +311,13 @@ Partial Public Class userreg
     Protected WithEvents txtPASSU As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label18 control.
+    '''Panel10 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label18 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Panel10 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''txtCPASSU control.
@@ -282,6 +327,15 @@ Partial Public Class userreg
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCPASSU As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Panel16 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Panel16 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
     '''BTN1U control.

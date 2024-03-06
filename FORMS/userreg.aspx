@@ -1,275 +1,504 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Crimereporting.Master" CodeBehind="userreg.aspx.vb" Inherits="FORMS.userreg" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style1 {
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="userreg.aspx.vb" Inherits="FORMS.userreg" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <script>
+        $(document).ready(function () {
+
+            var Validation = (function () {
+                var emailReg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                var digitReg = /^\d+$/;
+
+                var isEmail = function (email) {
+                    return emailReg.test(email);
+                };
+                var isNumber = function (value) {
+                    return digitReg.test(value);
+                };
+                var isRequire = function (value) {
+                    return value == "";
+                };
+                var countChars = function (value, count) {
+                    return value.length == count;
+                };
+                var isChecked = function (el) {
+                    var hasCheck = false;
+                    el.each(function () {
+                        if ($(this).prop('checked')) {
+                            hasCheck = true;
+                        }
+                    });
+                    return hasCheck;
+                };
+                return {
+                    isEmail: isEmail,
+                    isNumber: isNumber,
+                    isRequire: isRequire,
+                    countChars: countChars,
+                    isChecked: isChecked
+                };
+            })();
+
+            var required = $('form').find('[data-required]');
+            var numbers = $('form').find('[data-number]');
+            var emails = $('form').find('[data-email]');
+            var once = $('form').find('[data-once]');
+            var radios = $('.form-item-triple');
+            var groups = [];
+            radios.each(function () {
+                groups.push($(this).find('[data-once]'));
+            });
+            var counts = $('form').find('[data-count]');
+
+            $('#submit').on('click', function () {
+                required.each(function () {
+                    if (Validation.isRequire($(this).val())) {
+                        $(this).siblings('small.errorReq').show();
+                    }
+                });
+                emails.each(function () {
+                    if (!Validation.isEmail($(this).val())) {
+                        $(this).siblings('small.errorEmail').show();
+                    }
+                });
+                $.each(groups, function () {
+                    if (!Validation.isChecked($(this))) {
+                        $(this).parents('.form-item').find('small.errorOnce').show();
+                    }
+                });
+                numbers.each(function () {
+                    if (!Validation.isNumber($(this).val())) {
+                        $(this).siblings('small.errorNum').show();
+                    }
+                });
+                counts.each(function () {
+                    if (!Validation.countChars($(this).val(), $(this).data('count'))) {
+                        $(this).siblings('small.errorChar').show();
+                    }
+                });
+            });
+
+            required.on('keyup blur', function () {
+                if (!Validation.isRequire($(this).val())) {
+                    $(this).siblings('small.errorReq').hide();
+                }
+            });
+            emails.on('keyup blur', function () {
+                if (Validation.isEmail($(this).val())) {
+                    $(this).siblings('small.errorEmail').hide();
+                }
+            });
+            once.on('change', function () {
+                $.each(groups, function (i) {
+                    if (Validation.isChecked(groups[i])) {
+                        groups[i].parents('.form-item').find('small.errorOnce').hide();
+                    }
+                });
+            });
+            numbers.on('keyup blur', function () {
+                if (Validation.isNumber($(this).val())) {
+                    $(this).siblings('small.errorNum').hide();
+                }
+            });
+            counts.on('keyup blur', function () {
+                if (Validation.countChars($(this).val(), $(this).data('count'))) {
+                    $(this).siblings('small.errorChar').hide();
+                }
+            });
+
+        });
+    </script>    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+        html {
+            font-size: 10px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        body {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.428571429;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section {
+            background-color: #3D4067;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        header,
+        main,
+        footer {
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            padding: 48px;
+            @media (max-width: 440px) {
+                padding: 48px 24px;
+            }
+
+            >h3 {
+                font-size: 44px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+
+            >h4 {
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
+
+        main {
+            flex: 1;
+            padding: 0 48px;
+            @media (max-width: 440px) {
+                padding: 0 24px;
+            }
+        }
+
+        footer {
             width: 100%;
-            border: 3px solid #808080;
+            background-color: #524F81;
+            padding: 16px;
+            align-self: center;
+            text-align: center;
+            margin-top: 32px;
+
+            a {
+                color: #fff;
+                font-weight: 700;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
-        .auto-style2 {
-            width: 497px;
+
+        form {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
-        .auto-style4 {
-            width: 408px;
-            height: 24px;
+
+        .label {
+            color: rgba(226, 227, 232, .75);
+            font-size: 16px;
         }
-        .auto-style5 {
-            height: 24px;
-            width: 446px;
+
+        small {
+            display: none;
+
+            &.errorOnce {
+                margin-top: 2px;
+            }
         }
-        .auto-style6 {
-            width: 408px;
-            height: 25px;<a href="userreg.aspx">userreg.aspx</a>
+
+        .form-item {
+            input[type="text"],
+            input[type="number"],
+            input[type="email"] {
+                display: block;
+                color: #E2E3E8;
+                font-size: 16px;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #75759E;
+                padding: 8px 0;
+                appearance: none;
+                outline: none;
+            }
+
+            input[type="password"] {
+                display: block;
+                color: #E2E3E8;
+                font-size: 16px;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #75759E;
+                padding: 8px 0;
+                appearance: none;
+                outline: none;
+            }
+
+            select {
+                display: block;
+                color: #E2E3E8;
+                font-size: 16px;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #75759E;
+                padding: 8px 0;
+                appearance: none;
+                outline: none;
+            }
+
+            small {
+                /*letter-spacing: 1px;*/
+            }
+
+            i {
+                font-size: 12px;
+                color: red;
+            }
         }
-        .auto-style7 {
-            height: 25px;
-            width: 446px;
+
+        .box-item {
+            height: 60px;
+            margin-bottom: 16px;
         }
-        .auto-style8 {
-            width: 408px;
-            height: 32px;
+
+        .form-item-double {
+            display: flex;
+
+            .form-item {
+                flex: 1 1 auto;
+            }
+
+            .form-item:nth-child(1) {
+                padding-right: 16px;
+            }
+
+            .form-item:nth-child(2) {
+                padding-left: 16px;
+            }
         }
-        .auto-style9 {
-            height: 32px;
-            width: 446px;
+
+        .form-item-triple {
+            display: flex;
+            align-items: center;
+            padding-top: 6px;
+
+            .radio-label {
+                flex: 1 1 auto;
+                text-align: left;
+
+                label {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+
+            .form-item {
+                flex: 3 1 auto;
+                text-align: center;
+                margin: 0;
+
+                label, input[type="radio"] {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 4px;
+                }
+            }
         }
-        .auto-style10 {
-            width: 446px;
+
+        ::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: rgba(226, 227, 232, .75);
+            font-size: 16px;
         }
-        .auto-style11 {
-            width: 497px;
-            height: 24px;
+
+        :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: rgba(226, 227, 232, .75);
+            font-size: 16px;
+            opacity: 1;
         }
-        .auto-style12 {
-            width: 497px;
-            height: 32px;
+
+        ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: rgba(226, 227, 232, .75);
+            font-size: 16px;
+            opacity: 1;
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: rgba(226, 227, 232, .75);
+            font-size: 16px;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: rgba(226, 227, 232, .75);
+            font-size: 16px;
+        }
+
+        .submit {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 8px 48px;
+            margin-top: 32px;
+            border: 2px solid #75759E;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all ease .2s;
+
+            &:hover {
+                background-color: #EDA261;
+                border: 2px solid #EDA261;
+            }
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 800px;
+            height: 800px;
+            margin-top: -600px;
+            margin-left: -400px;
+            background: #252E45;
+            border-radius: 40%;
+            animation: shift 20s infinite linear;
+            z-index: 0;
+        }
+
+        @keyframes shift {
+            from {
+                transform: rotate(360deg);
+            }
         }
     </style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br />
-    <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label1" runat="server" ForeColor="#000099" Text="REGISTRATION"></asp:Label>
-    <br />
-    <br />
-    <table cellpadding="0" class="auto-style1">
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label2" runat="server" Text="FIRST NAME"></asp:Label>
-            </td>
-            <td class="auto-style10">
-                <asp:Label ID="Label3" runat="server" Text="LAST NAME"></asp:Label>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2"></td>
-            <td class="auto-style10"></td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txtFNU" runat="server" Width="191px"></asp:TextBox>
-            </td>
-            <td class="auto-style10">
-                <asp:TextBox ID="txtLNU" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label4" runat="server" Text="EMAIL"></asp:Label>
-            </td>
-            <td class="auto-style10">
-                <asp:Label ID="Label5" runat="server" Text="PHONE NUMBER"></asp:Label>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txtEMAILU" runat="server" Width="191px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-            <td class="auto-style10">
-                <asp:TextBox ID="txtPHNOU" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style11"></td>
-            <td class="auto-style5"></td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label6" runat="server" Text="DOB"></asp:Label>
-            </td>
-            <td class="auto-style10">
-                <asp:Label ID="Label7" runat="server" Text="AADHAR NUMBER"></asp:Label>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4"></td>
-            <td class="auto-style5"></td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txtDOBU" runat="server" Width="191px"></asp:TextBox>
-&nbsp; &nbsp;</td>
-            <td class="auto-style10">
-                <asp:TextBox ID="txtAADHARU" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label8" runat="server" Text="GENDER"></asp:Label>
-            </td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:RadioButton ID="RB1USER" runat="server" Text="MALE" GroupName="RB" />
-&nbsp;&nbsp; </td>
-            <td class="auto-style5">
-                <asp:RadioButton ID="RB2USER" runat="server" Text="FEMALE" GroupName="RB" />
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label9" runat="server" Text="HOUSE NAME"></asp:Label>
-            </td>
-            <td class="auto-style10">
-                <asp:Label ID="Label10" runat="server" Text="CITY"></asp:Label>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txtHNU" runat="server" Width="191px"></asp:TextBox>
-            </td>
-            <td class="auto-style9">
-                <asp:DropDownList ID="DDL2U" runat="server" Height="16px" Width="196px" AutoPostBack="True">
-                </asp:DropDownList>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style12">&nbsp;</td>
-            <td class="auto-style9">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label15" runat="server" Text="STATE"></asp:Label>
-            </td>
-            <td class="auto-style10">
-                <asp:Label ID="Label16" runat="server" Text="PINCODE"></asp:Label>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:DropDownList ID="DDL3U" runat="server" Height="37px" Width="196px" AutoPostBack="True">
-                </asp:DropDownList>
-            </td>
-            <td class="auto-style10">
-                <asp:TextBox ID="txtPINCODEU" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label11" runat="server" Text="DISTRICT"></asp:Label>
-                &nbsp;</td>
-            <td class="auto-style5">
-                <asp:Label ID="Label17" runat="server" Text="PASSWORD"></asp:Label>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:DropDownList ID="DDL1U" runat="server" Height="37px" Width="196px" AutoPostBack="True">
-                </asp:DropDownList>
-            </td>
-            <td class="auto-style10">
-                <asp:TextBox ID="txtPASSU" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style6"></td>
-            <td class="auto-style7"></td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label18" runat="server" Text="CONFIRM PASSWORD"></asp:Label>
-            </td>
-            <td class="auto-style5">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="txtCPASSU" runat="server" Width="191px"></asp:TextBox>
-            </td>
-            <td class="auto-style9">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="BTN1U" runat="server" Text="REGISTER" Width="194px" />
-            </td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-        </tr>
-    </table>
-    <br />
-</asp:Content>
+
+
+</head>
+<body>
+   <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div>
+            <div class="row">
+                <section class="section">
+                    <header>
+                        <h3>Register</h3>
+                        <h4>Please fill your information below</h4>
+                    </header>
+                    <main>
+                        <asp:Panel ID="Panel1" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="txtFNU" placeholder="First Name" CssClass="form-item" />
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel17" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="txtLNU" placeholder="Last Name" CssClass="form-item" />
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel2" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="txtEMAILU" placeholder="Email" CssClass="form-item" />
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                            <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel15" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="txtPHNOU" placeholder="Phone Number" CssClass="form-item" />
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                            <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+                            <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 10 digits</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel19" runat="server" CssClass="form-item">
+                                <asp:TextBox runat="server" ID="txtDOBU" placeholder="DOB" CssClass="form-item" />
+                                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                                <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+                            </asp:Panel>
+                        <asp:Panel ID="Panel20" runat="server" CssClass="form-item">
+                                <asp:TextBox runat="server" ID="txtAADHARU" placeholder="Aadhar Number" CssClass="form-item" />
+                                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                                <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+                            </asp:Panel>
+                        <asp:Panel ID="Panel3" runat="server" CssClass="form-item box-item">
+                            <asp:Panel ID="Panel4" runat="server" CssClass="form-item-triple">
+                                <div class="radio-label">
+                                    <label class="label">Gender</label>
+                                </div>
+                                <asp:Panel ID="Panel5" runat="server" CssClass="form-item">
+                                    <asp:RadioButton runat="server" ID="RB1USER" Text="Male" GroupName="RB" CssClass="radio" />
+                                    </asp:Panel>
+                                <asp:Panel ID="Panel6" runat="server" CssClass="form-item">
+                                    <asp:RadioButton runat="server" ID="RB2USER" Text="Female" GroupName="RB" CssClass="radio" />
+                                </asp:Panel>
+                            </asp:Panel>
+                            <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel7" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="txtHNU" placeholder="House Name" CssClass="form-item" />
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel21" runat="server" CssClass="form-item">
+                            <asp:DropDownList runat="server" ID="DDL3U" CssClass="form-item" AppendDataBoundItems="true" AutoPostBack="True">
+                                <asp:ListItem Text="-- Select State --" Value="" />
+                            </asp:DropDownList>
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel22" runat="server" CssClass="form-item">
+                            <asp:DropDownList runat="server" ID="DDL1U" CssClass="form-item" AppendDataBoundItems="true" AutoPostBack="True">
+                                <asp:ListItem Text="-- Select District --" Value="" />
+                            </asp:DropDownList>
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel23" runat="server" CssClass="form-item">
+                            <asp:DropDownList runat="server" ID="DDL2U" CssClass="form-item" AppendDataBoundItems="true" AutoPostBack="True">
+                                <asp:ListItem Text="-- Select City --" Value="" />
+                            </asp:DropDownList>
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel8" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="txtPINCODEU" placeholder="Pincode" CssClass="form-item" />
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                            <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel9" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="txtPASSU" TextMode="Password" placeholder="Password" CssClass="form-item" />
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel10" runat="server" CssClass="form-item box-item">
+                            <asp:TextBox runat="server" ID="txtCPASSU" TextMode="Password" placeholder="Confirm Password" CssClass="form-item" />
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                            <small class="errorMatch"><i class="fa fa-asterisk" aria-hidden="true"></i> passwords do not match</small>
+                        </asp:Panel>
+                        
+                        <asp:Panel ID="Panel16" runat="server" CssClass="form-item">
+                            <asp:Button runat="server" ID="BTN1U" Text="Submit" CssClass="submit" />
+                        </asp:Panel>
+                    </main>
+                    <footer>
+                        <p>Already have an account? <a href="Loginform.aspx">Login here</a></p>
+                    </footer>
+                    <i class="wave"></i>
+                </asp:Panel>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

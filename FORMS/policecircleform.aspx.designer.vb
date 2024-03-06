@@ -138,4 +138,13 @@ Partial Public Class Policedeptform
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BT1P As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''GVP control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GVP As Global.System.Web.UI.WebControls.GridView
 End Class

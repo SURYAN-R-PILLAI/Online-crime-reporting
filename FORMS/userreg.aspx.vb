@@ -2,28 +2,16 @@
 Imports System.Data
 Public Class userreg
     Inherits System.Web.UI.Page
-    Dim con As New SqlConnection
+    Dim co As test = New test
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        con.ConnectionString = " Data Source = LAPTOP-3KTJE2ED\SQLEXPRESS; Initial Catalog = crimedb; User id = sa; Password = 123;"
-        con.Open()
         If Not Me.IsPostBack Then
-
             bindState()
-
+            
         End If
-        If Not Me.IsPostBack Then
-            bindDistrict()
-
-
-        End If
-        If Not Me.IsPostBack Then
-
-            bindCity()
-
-        End If
-
     End Sub
+
     Protected Sub BTN1U_Click(sender As Object, e As EventArgs) Handles BTN1U.Click
+
         Dim Instr As String
         Dim Gen As String
         If RB1USER.Checked = True Then
@@ -32,7 +20,7 @@ Public Class userreg
             Gen = "FEMALE"
         End If
         Instr = " Insert into User_table( First_name,Last_name,Email,Phone_no,Dob,Aadhar_number,Gender,House_name,State_id,City_id,Dist_id,Pincode,Password,Confirm_password) Values('" + txtFNU.Text + "','" + txtLNU.Text + "','" + txtEMAILU.Text + "'," + txtPHNOU.Text + ", '" + txtDOBU.Text + "'," + txtAADHARU.Text + ",'" + Gen + "','" + txtHNU.Text + "'," + DDL3U.SelectedValue + "," + DDL2U.SelectedValue + "," + DDL1U.SelectedValue + ",'" + txtPINCODEU.Text + "','" + txtPASSU.Text + "','" + txtCPASSU.Text + "')"
-        Dim cmpUser As SqlCommand = New SqlCommand(Instr, con)
+        Dim cmpUser As SqlCommand = New SqlCommand(Instr, co.connect())
         cmpUser.ExecuteNonQuery()
         Response.Write("<script>alert('Data saved successfully');</script>")
         txtFNU.Text = " "
@@ -45,12 +33,11 @@ Public Class userreg
         txtPINCODEU.Text = " "
         txtPASSU.Text = " "
         txtCPASSU.Text = " "
-
     End Sub
     Public Sub bindState()
         Dim str As String
         str = "select State_id,State_name from State_table"
-        Dim com As SqlCommand = New SqlCommand(str, con)
+        Dim com As SqlCommand = New SqlCommand(str, co.connect())
         Dim sqldas As SqlDataAdapter = New SqlDataAdapter(com)
         Dim ds2 As DataTable = New DataTable
         sqldas.Fill(ds2)
@@ -63,11 +50,10 @@ Public Class userreg
     Public Sub bindDistrict()
         Dim str As String
         str = "select Dist_id,State_id,Dist_name from District_table where State_id='" + DDL3U.SelectedValue + "'"
-        Dim comn As SqlCommand = New SqlCommand(str, con)
+        Dim comn As SqlCommand = New SqlCommand(str, co.connect)
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(comn)
         Dim ds2 As DataTable = New DataTable
         sqlda.Fill(ds2)
-        DDL1U.Items.Clear()
         DDL1U.Items.Add("--Select--")
         DDL1U.DataTextField = "Dist_name"
         DDL1U.DataValueField = "Dist_id"
@@ -77,12 +63,11 @@ Public Class userreg
     End Sub
     Public Sub bindCity()
         Dim str As String
-        str = "select City_id,State_id,Dist_id,City_name from City_table where Dist_id ='" + DDL1U.SelectedValue + "'"
-        Dim comnn As SqlCommand = New SqlCommand(str, con)
+        str = "select City_id,State_id,Dist_id,City_name from City_table where Dist_id = '" + DDL1U.SelectedValue + "'"
+        Dim comnn As SqlCommand = New SqlCommand(str, co.connect)
         Dim sqldad As SqlDataAdapter = New SqlDataAdapter(comnn)
         Dim ds3 As DataTable = New DataTable
         sqldad.Fill(ds3)
-        DDL2U.Items.Clear()
         DDL2U.Items.Add("--Select--")
         DDL2U.DataTextField = "City_name"
         DDL2U.DataValueField = "City_id"
@@ -90,15 +75,24 @@ Public Class userreg
         DDL2U.DataBind()
 
     End Sub
+    Public Sub bindgrid()
+
+        Dim ap As DataTable = New DataTable
+        Dim str As String
+        str = "select First_name,Last_name,Email,Phone_no,Dob,Aadhar_number,Gender,House_name,Pincode,Password,Confirm_password from User_table"
+        Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
+        Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
+        ad.Fill(ap)
+        
+
+    End Sub
 
     Protected Sub DDL3U_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDL3U.SelectedIndexChanged
         bindDistrict()
+
     End Sub
     Protected Sub DDL1U_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDL1U.SelectedIndexChanged
         bindCity()
 
     End Sub
-
-
-   
 End Class

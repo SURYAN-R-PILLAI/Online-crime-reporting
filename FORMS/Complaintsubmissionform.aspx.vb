@@ -2,13 +2,12 @@
 Imports System.Data
 Public Class Complaintsubmissionform
     Inherits System.Web.UI.Page
-    Dim con As New SqlConnection
+    Dim co As test = New test
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        con.ConnectionString = " Data Source = LAPTOP-3KTJE2ED\SQLEXPRESS; Initial Catalog = crimedb; User id = sa; Password = 123;"
-        con.Open()
         If Not Me.IsPostBack Then
             bindUser()
             bindLocation()
+            bindgrid()
         End If
 
     End Sub
@@ -16,7 +15,7 @@ Public Class Complaintsubmissionform
     Protected Sub BT1C_Click(sender As Object, e As EventArgs) Handles BT1C.Click
         Dim Instr As String
         Instr = " Insert into Complaint_table( Full_name,Email,Phone_number,User_id,Subject,Place_of_occurrence,Date_of_occurrence,Police_station,Location_id,Description) Values('" + txtFNC.Text + "','" + txtEMAILC.Text + "'," + txtPHNOC.Text + "," + DDL1C.SelectedValue + ",'" + txtSUBJECTC.Text + "', '" + txtPOC.Text + "','" + txtDOC.Text + "','" + txtPSC.Text + "'," + DDL2C.SelectedValue + ",'" + txtDESCRIPTIONC.Text + "')"
-        Dim cmpComplaint As SqlCommand = New SqlCommand(Instr, con)
+        Dim cmpComplaint As SqlCommand = New SqlCommand(Instr, co.connect())
         cmpComplaint.ExecuteNonQuery()
         Response.Write("<script>alert('Data saved successfully');</script>")
         txtFNC.Text = " "
@@ -31,7 +30,7 @@ Public Class Complaintsubmissionform
     Sub bindUser()
         Dim str As String
         str = "select User_id,First_name from User_table"
-        Dim com As SqlCommand = New SqlCommand(str, con)
+        Dim com As SqlCommand = New SqlCommand(str, co.connect())
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim ds As DataTable = New DataTable
 
@@ -47,7 +46,7 @@ Public Class Complaintsubmissionform
     Sub bindLocation()
         Dim str As String
         str = "select Location_id,Location_name from Location_table"
-        Dim com As SqlCommand = New SqlCommand(str, con)
+        Dim com As SqlCommand = New SqlCommand(str, co.connect())
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim ds As DataTable = New DataTable
         sqlda.Fill(ds)
@@ -58,12 +57,20 @@ Public Class Complaintsubmissionform
         DDL2C.DataSource = ds
         DDL2C.DataBind()
     End Sub
+    Public Sub bindgrid()
 
-    Protected Sub DDL1C_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDL1C.SelectedIndexChanged
-        bindUser()
+        Dim ap As DataTable = New DataTable
+        Dim str As String
+        str = "select Full_name,Email,Phone_number,Subject,Place_of_occurrence,Date_of_occurrence,Police_station,Description from Complaint_table"
+        Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
+        Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
+        ad.Fill(ap)
+        GVC.DataSource = ap
+        GVC.DataBind()
+
     End Sub
-
-    Protected Sub DDL2C_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDL2C.SelectedIndexChanged
-        bindLocation()
+    Protected Sub GVC_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles GVC.PageIndexChanging
+        GVC.PageIndex = e.NewPageIndex
+        Me.bindgrid()
     End Sub
 End Class

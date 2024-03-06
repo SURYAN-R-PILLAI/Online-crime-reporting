@@ -85,18 +85,119 @@
     <Content Include="Cityform.aspx" />
     <Content Include="Complaintsubmissionform.aspx" />
     <Content Include="Courtform.aspx" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\default-skin.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\icomoon.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.fancybox.min.css" />
+    <Content Include="css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="css\meanmenu.css" />
+    <Content Include="css\nice-select.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\style.css" />
     <Content Include="Districtform.aspx" />
     <Content Include="Firform.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="FRMpolice.aspx" />
+    <Content Include="FRMuser.aspx" />
+    <Content Include="icon\1.png" />
+    <Content Include="icon\2.png" />
+    <Content Include="icon\3.png" />
+    <Content Include="icon\4.png" />
+    <Content Include="icon\calll.png" />
+    <Content Include="icon\errow.png" />
+    <Content Include="icon\fb.png" />
+    <Content Include="icon\google.png" />
+    <Content Include="icon\instagram.png" />
+    <Content Include="icon\lin%282%29.png" />
+    <Content Include="icon\p1.png" />
+    <Content Include="icon\p2.png" />
+    <Content Include="icon\p3.png" />
+    <Content Include="icon\p4.png" />
+    <Content Include="icon\p5.png" />
+    <Content Include="icon\p6.png" />
+    <Content Include="icon\p7.png" />
+    <Content Include="icon\service1.png" />
+    <Content Include="icon\service2.png" />
+    <Content Include="icon\service3.png" />
+    <Content Include="icon\service4.png" />
+    <Content Include="icon\service5.png" />
+    <Content Include="icon\service6.png" />
+    <Content Include="icon\tw.png" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\blog-image.jpg" />
+    <Content Include="images\blog-image0.jpg" />
+    <Content Include="images\lllll.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\mapimg.jpg" />
+    <Content Include="images\pc_layout.png" />
+    <Content Include="images\search_icon.png" />
     <Content Include="Investigationform.aspx" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\jquery-3.0.0.min.js" />
+    <Content Include="js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\modernizer.js" />
+    <Content Include="js\plugin.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="js\revolution\assets\coloredbg.png" />
+    <Content Include="js\revolution\assets\gridtile.png" />
+    <Content Include="js\revolution\assets\gridtile_3x3.png" />
+    <Content Include="js\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="js\revolution\assets\gridtile_white.png" />
+    <Content Include="js\revolution\assets\loader.gif" />
+    <Content Include="js\revolution\css\closedhand.html" />
+    <Content Include="js\revolution\css\layers.css" />
+    <Content Include="js\revolution\css\navigation.css" />
+    <Content Include="js\revolution\css\openhand.html" />
+    <Content Include="js\revolution\css\settings.css" />
+    <Content Include="js\revolution\fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.svg" />
+    <Content Include="js\revolution\fonts\revicons\revicons90c6.svg" />
+    <Content Include="js\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="js\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="js\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="js\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="js\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="js\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="js\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="js\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="js\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="js\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="js\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="js\slider-setting.js" />
     <Content Include="Locationform.aspx" />
     <Content Include="Loginform.aspx" />
     <Content Include="Officerform.aspx" />
     <Content Include="policecircleform.aspx" />
+    <Content Include="Policereg.aspx" />
     <Content Include="Stateform.aspx" />
     <Content Include="Stationform.aspx" />
     <Content Include="Teamassignform.aspx" />
     <Content Include="userreg.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrestform.aspx.designer.vb">
@@ -111,6 +212,13 @@
     </Compile>
     <Compile Include="Cityform.aspx.vb">
       <DependentUpon>Cityform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Complainants.Master.designer.vb">
+      <DependentUpon>Complainants.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Complainants.Master.vb">
+      <DependentUpon>Complainants.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Complaintsubmissionform.aspx.designer.vb">
@@ -148,6 +256,20 @@
       <DependentUpon>Firform.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="FRMpolice.aspx.designer.vb">
+      <DependentUpon>FRMpolice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FRMpolice.aspx.vb">
+      <DependentUpon>FRMpolice.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FRMuser.aspx.designer.vb">
+      <DependentUpon>FRMuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FRMuser.aspx.vb">
+      <DependentUpon>FRMuser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Investigationform.aspx.designer.vb">
       <DependentUpon>Investigationform.aspx</DependentUpon>
     </Compile>
@@ -167,7 +289,7 @@
     </Compile>
     <Compile Include="Loginform.aspx.vb">
       <DependentUpon>Loginform.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -202,6 +324,13 @@
       <DependentUpon>policecircleform.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Policereg.aspx.designer.vb">
+      <DependentUpon>Policereg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Policereg.aspx.vb">
+      <DependentUpon>Policereg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Stateform.aspx.designer.vb">
       <DependentUpon>Stateform.aspx</DependentUpon>
     </Compile>
@@ -223,6 +352,7 @@
       <DependentUpon>Teamassignform.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="test.vb" />
     <Compile Include="userreg.aspx.designer.vb">
       <DependentUpon>userreg.aspx</DependentUpon>
     </Compile>
@@ -241,6 +371,53 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Crimereporting.Master" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\IcoMoon-Free.ttf" />
+    <Content Include="fonts\Poppins-Black.ttf" />
+    <Content Include="fonts\Poppins-BlackItalic.ttf" />
+    <Content Include="fonts\Poppins-Bold.ttf" />
+    <Content Include="fonts\Poppins-BoldItalic.ttf" />
+    <Content Include="fonts\Poppins-ExtraBold.ttf" />
+    <Content Include="fonts\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="fonts\Poppins-ExtraLight.ttf" />
+    <Content Include="fonts\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="fonts\Poppins-Italic.ttf" />
+    <Content Include="fonts\Poppins-Light.ttf" />
+    <Content Include="fonts\Poppins-LightItalic.ttf" />
+    <Content Include="fonts\Poppins-Medium.ttf" />
+    <Content Include="fonts\Poppins-MediumItalic.ttf" />
+    <Content Include="fonts\Poppins-Regular.ttf" />
+    <Content Include="fonts\Poppins-SemiBold.ttf" />
+    <Content Include="fonts\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="fonts\Poppins-Thin.ttf" />
+    <Content Include="fonts\Poppins-ThinItalic.ttf" />
+    <Content Include="images\.DS_Store" />
+    <Content Include="js\.DS_Store" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="js\revolution\.DS_Store" />
+    <Content Include="js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.eot" />
+    <Content Include="js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.ttf" />
+    <Content Include="js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-strokebb1d.woff" />
+    <Content Include="js\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroked41d.eot" />
+    <Content Include="js\revolution\fonts\revicons\revicons90c6.eot" />
+    <Content Include="js\revolution\fonts\revicons\revicons90c6.ttf" />
+    <Content Include="js\revolution\fonts\revicons\revicons90c6.woff" />
+    <Content Include="js\revolution\js\.DS_Store" />
+    <Content Include="Complainants.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

@@ -120,4 +120,13 @@ Partial Public Class Locationform
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BT1L As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''GVL control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GVL As Global.System.Web.UI.WebControls.GridView
 End Class

@@ -156,4 +156,13 @@ Partial Public Class Courtform
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BT1CO As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''GVCO control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GVCO As Global.System.Web.UI.WebControls.GridView
 End Class

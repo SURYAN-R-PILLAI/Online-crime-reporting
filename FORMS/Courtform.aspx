@@ -23,6 +23,20 @@
         .auto-style6 {
             height: 27px;
         }
+        .auto-style7 {
+            width: 366px;
+            height: 31px;
+        }
+        .auto-style8 {
+            height: 31px;
+        }
+        .auto-style9 {
+            width: 366px;
+            height: 64px;
+        }
+        .auto-style10 {
+            height: 64px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -130,10 +144,28 @@
             <td></td>
         </tr>
         <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td>
+            <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            <td class="auto-style8">
                 <asp:Button ID="BT1CO" runat="server" Text="SUBMIT" Width="147px" />
             </td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style9"></td>
+            <td class="auto-style10">
+                <asp:GridView ID="GVCO" runat="server" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" PageIndex="2" PageSize="2" Width="534px">
+                    
+                </asp:GridView>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;</td>
