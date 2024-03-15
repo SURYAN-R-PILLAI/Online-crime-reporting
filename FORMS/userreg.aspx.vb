@@ -54,7 +54,6 @@ Public Class userreg
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(comn)
         Dim ds2 As DataTable = New DataTable
         sqlda.Fill(ds2)
-        DDL1U.Items.Add("--Select--")
         DDL1U.DataTextField = "Dist_name"
         DDL1U.DataValueField = "Dist_id"
         DDL1U.DataSource = ds2
@@ -68,7 +67,6 @@ Public Class userreg
         Dim sqldad As SqlDataAdapter = New SqlDataAdapter(comnn)
         Dim ds3 As DataTable = New DataTable
         sqldad.Fill(ds3)
-        DDL2U.Items.Add("--Select--")
         DDL2U.DataTextField = "City_name"
         DDL2U.DataValueField = "City_id"
         DDL2U.DataSource = ds3

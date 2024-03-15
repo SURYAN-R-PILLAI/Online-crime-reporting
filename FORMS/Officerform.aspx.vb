@@ -31,8 +31,6 @@ Public Class Officerform
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim ds As DataTable = New DataTable
         sqlda.Fill(ds)
-        DDL1O.Items.Clear()
-        DDL1O.Items.Add("--Select--")
         DDL1O.DataTextField = "Circle_area"
         DDL1O.DataValueField = "Circle_id"
         DDL1O.DataSource = ds
@@ -45,8 +43,6 @@ Public Class Officerform
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim ds As DataTable = New DataTable
         sqlda.Fill(ds)
-        DDL2O.Items.Clear()
-        DDL2O.Items.Add("--Select--")
         DDL2O.DataTextField = "Station_name"
         DDL2O.DataValueField = "Station_id"
         DDL2O.DataSource = ds
@@ -59,8 +55,6 @@ Public Class Officerform
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(com)
         Dim ds As DataTable = New DataTable
         sqlda.Fill(ds)
-        DDL3O.Items.Clear()
-        DDL3O.Items.Add("--Select--")
         DDL3O.DataTextField = "Team_head"
         DDL3O.DataValueField = "Assign_id"
         DDL3O.DataSource = ds

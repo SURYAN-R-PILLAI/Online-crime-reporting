@@ -23,15 +23,6 @@ Partial Public Class Firform
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Label2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''DDL1F control.
     '''</summary>
     '''<remarks>
@@ -41,13 +32,13 @@ Partial Public Class Firform
     Protected WithEvents DDL1F As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Label3 control.
+    '''Label2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''DDL2F control.
@@ -59,13 +50,13 @@ Partial Public Class Firform
     Protected WithEvents DDL2F As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Label4 control.
+    '''Label3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtFRF control.
@@ -77,13 +68,13 @@ Partial Public Class Firform
     Protected WithEvents txtFRF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label5 control.
+    '''Label4 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtFDF control.
@@ -95,13 +86,13 @@ Partial Public Class Firform
     Protected WithEvents txtFDF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label6 control.
+    '''Label5 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtPOF control.
@@ -113,13 +104,13 @@ Partial Public Class Firform
     Protected WithEvents txtPOF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label7 control.
+    '''Label6 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtIPCF control.
@@ -131,13 +122,13 @@ Partial Public Class Firform
     Protected WithEvents txtIPCF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label8 control.
+    '''Label7 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtCSF control.
@@ -149,13 +140,13 @@ Partial Public Class Firform
     Protected WithEvents txtCSF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label9 control.
+    '''Label8 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtMOF control.
@@ -167,13 +158,13 @@ Partial Public Class Firform
     Protected WithEvents txtMOF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label10 control.
+    '''Label9 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label10 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtEVIDENCEF control.
@@ -185,13 +176,13 @@ Partial Public Class Firform
     Protected WithEvents txtEVIDENCEF As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label11 control.
+    '''Label10 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label11 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label10 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''DDL3F control.
@@ -203,13 +194,13 @@ Partial Public Class Firform
     Protected WithEvents DDL3F As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Label12 control.
+    '''Label11 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label12 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label11 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''DDL4F control.

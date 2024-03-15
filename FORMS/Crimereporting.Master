@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Crime Reporting System</title>
+<head id="Head1" runat="server">
+     <title>Crime Reporting System</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
-         </asp:ContentPlaceHolder>
-        <!-- bootstrap css -->
+    </asp:ContentPlaceHolder>
+     <!-- bootstrap css -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <!-- style css -->
         <link rel="stylesheet" href="css/style.css" />
@@ -23,8 +23,12 @@
    
 </head>
 <body>
-    <header>
-        <!-- header inner -->
+    <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/load.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header inner -->
         <div class="header">
             <div class="head_top">
                 <div class="container">
@@ -32,16 +36,12 @@
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div class="top-box">
                                 <ul class="sociel_link">
-                                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div class="top-box">
-                                <p>long established fact that a reader will be </p>
+                                <p>Online Crime Reporting </p>
                             </div>
                         </div>
                     </div>
@@ -62,14 +62,14 @@
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li class="active"><a href="#">HOME</a> </li>
-                                        <li><a href="#">ABOUT</a> </li>
-                                        <li><a href="Policereg.aspx">REGISTER</a> </li>
+                                        <li class="active"><a href="#">Home</a> </li>
+                                        <li><a href="#">About</a> </li>
+                                         <li><a href="Policereg.aspx">REGISTER</a> </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="A1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                          POLICE DEPARTMENT
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                               <a class="dropdown-item" href="policecircleform.aspx">CIRCLE DETAILS</a>
                                               <a class="dropdown-item" href="Stationform.aspx">STATION DETAILS</a>
                                               <a class="dropdown-item" href="Officerform.aspx">OFFICERS DETAILS</a>
@@ -79,79 +79,28 @@
                                               <a class="dropdown-item" href="Arrestform.aspx">ARREST DETAILS</a>
                                               <a class="dropdown-item" href="Courtform.aspx">COURT DETAILS</a>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
-                        <li><a class="buy" href="Loginform.aspx">Logout</a></li>
-                    </div>
                                           </li>
                                         </ul>
                                 </nav>
                             </div>
                         </div>
                     </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                        <li><a class="buy" href="Loginform.aspx">Logout</a></li>
+                    </div>
                 </div>
             </div>
             <!-- end header inner -->
     </header>
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
     </form>
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        <ul class="sociel">
-                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="contact">
-                            <h3>conatct us</h3>
-                            <span>123 Second Street Fifth Avenue,<br />
-                                Manhattan, New York<br>
-                                +987 654 3210</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="contact">
-                            <h3>ADDITIONAL LINKS</h3>
-                            <ul class="lik">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Terms and conditions</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="contact">
-                            <h3>service</h3>
-                            <ul class="lik">
-                                <li><a href="#">Data recovery</a></li>
-                                <li><a href="#">Computer repair</a></li>
-                                <li><a href="#">Mobile service</a></li>
-                                <li><a href="#">Network solutions</a></li>
-                                <li><a href="#">Technical support</a></li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="contact">
-                            <h3>About lighten</h3>
-                            <span>Tincidunt elit magnis nulla facilisis. Dolor Sapien nunc amet ultrices, </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <footer>
+        
             <div class="copyright">
                 <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a> Distributed By <a href="https://themewagon.com">ThemeWagon </a></p>
             </div>

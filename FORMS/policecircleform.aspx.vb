@@ -23,6 +23,7 @@ Public Class Policedeptform
         txtHNP.Text = " "
         txtPINCODEP.Text = " "
         txtPHNOP.Text = " "
+        bindgrid()
     End Sub
     Public Sub bindDistrict()
         Dim str As String
@@ -31,8 +32,6 @@ Public Class Policedeptform
         Dim sqlda As SqlDataAdapter = New SqlDataAdapter(comn)
         Dim ds2 As DataTable = New DataTable
         sqlda.Fill(ds2)
-        DDL1P.Items.Clear()
-        DDL1P.Items.Add("--Select--")
         DDL1P.DataTextField = "Dist_name"
         DDL1P.DataValueField = "Dist_id"
         DDL1P.DataSource = ds2
@@ -46,8 +45,6 @@ Public Class Policedeptform
         Dim sqldad As SqlDataAdapter = New SqlDataAdapter(comnn)
         Dim ds3 As DataTable = New DataTable
         sqldad.Fill(ds3)
-        DDL2P.Items.Clear()
-        DDL2P.Items.Add("--Select--")
         DDL2P.DataTextField = "City_name"
         DDL2P.DataValueField = "City_id"
         DDL2P.DataSource = ds3

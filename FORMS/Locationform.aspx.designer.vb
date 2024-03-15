@@ -23,15 +23,6 @@ Partial Public Class Locationform
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Label2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''txtLNL control.
     '''</summary>
     '''<remarks>
@@ -41,13 +32,13 @@ Partial Public Class Locationform
     Protected WithEvents txtLNL As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label3 control.
+    '''Label2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''DDL1L control.
@@ -59,13 +50,13 @@ Partial Public Class Locationform
     Protected WithEvents DDL1L As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Label4 control.
+    '''Label3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''DDL2L control.
@@ -77,13 +68,13 @@ Partial Public Class Locationform
     Protected WithEvents DDL2L As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Label5 control.
+    '''Label4 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtPINCODEL control.
@@ -95,13 +86,13 @@ Partial Public Class Locationform
     Protected WithEvents txtPINCODEL As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label6 control.
+    '''Label5 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''DDL3L control.

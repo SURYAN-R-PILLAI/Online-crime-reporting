@@ -1,132 +1,105 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Crimereporting.Master" CodeBehind="Teamassignform.aspx.vb" Inherits="FORMS.Teamassignform" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
+        .styledTextbox,
+    .styledDropdown {
+        display: block;
+        padding-left: 10px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        height: 45px;
+        width: 100%;
+    }
+        * {
+            box-sizing: border-box;
+        }
 
-        .auto-style1 {
+        body {
+            height: 100vh;
+            display: flex;
+            background: linear-gradient(to right, SlateBlue, MediumPurple, Turquoise);
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            background-color: #e6e6ff;
+            font-family: Helvetica;
+        }
+
+        input[type=text], input[type=email], input[type=password], input[type=tel] {
+            display: block;
+            padding-left: 10px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            height: 45px;
             width: 100%;
-            border: 4px solid #808080;
+            margin-bottom: 10px;
         }
-        .auto-style3 {
-            height: 24px;
-            width: 331px;
+
+        .inputfields {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
         }
-        .auto-style2 {
-            height: 24px;
+
+        .registerbtn {
+            background: linear-gradient(195deg, SlateBlue, MediumPurple, Turquoise);
+            padding: 10px;
+            width: 100%;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
-        .auto-style4 {
-            width: 331px;
+
+        .registerbtn:hover {
+            opacity: 50;
         }
-        .auto-style5 {
-            width: 331px;
-            height: 27px;
-        }
-        .auto-style6 {
-            height: 27px;
+
+        a {
+            color: #1a1aff;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label1" runat="server" Text="TEAM ASSIGN DETAILS"></asp:Label>
-    <br />
-    <br />
-    <table cellpadding="0" class="auto-style1">
-        <tr>
-            <td class="auto-style3"></td>
-            <td class="auto-style2"></td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label2" runat="server" Text="CIRCLE AREA"></asp:Label>
-            </td>
-            <td class="auto-style2">
-                <asp:TextBox ID="txtCAT" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style3"></td>
-            <td class="auto-style2"></td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label3" runat="server" Text="COMPLAINANT NAME"></asp:Label>
-            </td>
-            <td class="auto-style2">
-                <asp:DropDownList ID="DDL1T" runat="server" Height="17px" Width="198px">
-                </asp:DropDownList>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style3"></td>
-            <td class="auto-style2"></td>
-        </tr>
-        <tr>
-            <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label6" runat="server" Text="TEAM HEAD"></asp:Label>
-            </td>
-            <td class="auto-style6">
-                <asp:TextBox ID="txtTHT" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label7" runat="server" Text="CITY"></asp:Label>
-            </td>
-            <td class="auto-style2">
-                <asp:DropDownList ID="DDL2T" runat="server" Height="18px" Width="198px">
-                </asp:DropDownList>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label8" runat="server" Text="EMAIL"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td>
-                <asp:TextBox ID="txtEMAILT" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label9" runat="server" Text="CONTACT NUMBER"></asp:Label>
-            </td>
-            <td class="auto-style2">
-                <asp:TextBox ID="txtCNT" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style3"></td>
-            <td class="auto-style2"></td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td>
-                <asp:Button ID="BT1T" runat="server" Text="SUBMIT" Width="147px" style="height: 29px" />
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-    </table>
+   <div class="container">
+        <h3><b>OFFICERS DETAILS</b></h3>
+        <hr />
+        <div class="inputfields">
+         
+             <asp:Label ID="Label1" runat="server" Text="CIRCLE AREA"></asp:Label>
+             <asp:TextBox ID="txtCAT" runat="server" CssClass="styledTextbox" placeholder="Enter Circle Area"  required></asp:TextBox>
+            
+             <asp:Label ID="Label2" runat="server" Text="COMPLAINANT NAME" ></asp:Label>
+            <asp:DropDownList ID="DDL1T" runat="server" CssClass="styledDropdown" required AutoPostBack="True">
+              <asp:ListItem Text="-- Select --" Value="" />
+            </asp:DropDownList>
+
+             <asp:Label ID="Label3" runat="server" Text="TEAM HEAD"></asp:Label>
+             <asp:TextBox ID="txtTHT" runat="server" CssClass="styledTextbox" placeholder="Enter Team Head"  required></asp:TextBox>
+
+            <asp:Label ID="Label4" runat="server" Text="CITY" ></asp:Label>
+            <asp:DropDownList ID="DDL2T" runat="server" CssClass="styledDropdown" required AutoPostBack="True">
+              <asp:ListItem Text="-- Select --" Value="" />
+            </asp:DropDownList>
+
+             <asp:Label ID="Label5" runat="server" Text="EMAIL"></asp:Label>
+            <asp:TextBox ID="txtEMAILT" runat="server" CssClass="styledTextbox" placeholder="Enter Email"  required></asp:TextBox>
+
+           
+             <asp:Label ID="Label6" runat="server" Text="CONTACT NUMBER"></asp:Label>
+            <asp:TextBox ID="txtCNT" runat="server" CssClass="styledTextbox" placeholder="Enter Contact Number"  required></asp:TextBox>
+
+             
+             
+            <hr />
+
+            <asp:Button ID="BT1T" runat="server" Text="SUBMIT"  CssClass="registerbtn" />
+
+            <br />
+        </div>
+    </div>
 </asp:Content>

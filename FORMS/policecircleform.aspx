@@ -1,141 +1,104 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Crimereporting.Master" CodeBehind="policecircleform.aspx.vb" Inherits="FORMS.Policedeptform" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style1 {
+        .styledTextbox,
+    .styledDropdown {
+        display: block;
+        padding-left: 10px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        height: 45px;
+        width: 100%;
+    }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            background: linear-gradient(to right, SlateBlue, MediumPurple, Turquoise);
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            background-color: #e6e6ff;
+            font-family: Helvetica;
+        }
+
+        input[type=text], input[type=email], input[type=password], input[type=tel] {
+            display: block;
+            padding-left: 10px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            height: 45px;
             width: 100%;
-            border: 4px solid #808080;
+            margin-bottom: 10px;
         }
-        .auto-style3 {
-            height: 24px;
-            width: 331px;
+
+        .inputfields {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
         }
-        .auto-style2 {
-            height: 24px;
+
+        .registerbtn {
+            background: linear-gradient(195deg, SlateBlue, MediumPurple, Turquoise);
+            padding: 10px;
+            width: 100%;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
-        .auto-style4 {
-            width: 331px;
+
+        .registerbtn:hover {
+            opacity: 50;
         }
-        .auto-style5 {
-            width: 331px;
-            height: 27px;
-        }
-        .auto-style6 {
-            height: 27px;
+
+        a {
+            color: #1a1aff;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label1" runat="server" Text="CIRCLE DETAILS"></asp:Label>
-    <br />
-    <br />
-    <table cellpadding="0" class="auto-style1">
-        <tr>
-            <td class="auto-style3"></td>
-            <td class="auto-style2"></td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label2" runat="server" Text="CIRCLE AREA"></asp:Label>
-            </td>
-            <td class="auto-style2">
-                <asp:TextBox ID="txtCAP" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;</td>
-            <td class="auto-style2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label3" runat="server" Text=" HEAD NAME"></asp:Label>
-            </td>
-            <td class="auto-style2">
-                <asp:TextBox ID="txtHNP" runat="server" style="margin-bottom: 0px" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style3"></td>
-            <td class="auto-style2"></td>
-        </tr>
-        <tr>
-            <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label4" runat="server" Text="DISTRICT"></asp:Label>
-            </td>
-            <td class="auto-style6">
-                <asp:DropDownList ID="DDL1P" runat="server" Height="30px" Width="197px" AutoPostBack="True">
-                </asp:DropDownList>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label5" runat="server" Text="CITY"></asp:Label>
-            </td>
-            <td>
-                <asp:DropDownList ID="DDL2P" runat="server" Height="30px" Width="197px" AutoPostBack="True">
-                </asp:DropDownList>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label6" runat="server" Text="PINCODE"></asp:Label>
-            </td>
-            <td class="auto-style2">
-                <asp:TextBox ID="txtPINCODEP" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label7" runat="server" Text="PHONE NO"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td>
-                <asp:TextBox ID="txtPHNOP" runat="server" Width="191px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td class="auto-style2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3"></td>
-            <td class="auto-style2"></td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td>
-                <asp:Button ID="BT1P" runat="server" Text="SUBMIT" Width="147px" />
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td>
-                <asp:GridView ID="GVP" runat="server" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" PageIndex="2" PageSize="2" Width="400px">
+     <div class="container">
+        <h3><b>CIRCLE DETAILS</b></h3>
+        <hr />
+        <div class="inputfields">
+         
+             <asp:Label ID="Label1" runat="server" Text="CIRCLE AREA"></asp:Label>
+             <asp:TextBox ID="txtCAP" runat="server" CssClass="styledTextbox" placeholder="Enter Circle Area"  required></asp:TextBox>
+            
+             <asp:Label ID="Label2" runat="server" Text="HEAD NAME"></asp:Label>
+             <asp:TextBox ID="txtHNP" runat="server" CssClass="styledTextbox" placeholder="Enter Head Name"  required></asp:TextBox>
+
+            <asp:Label ID="Label3" runat="server" Text="DISTRICT" ></asp:Label>
+            <asp:DropDownList ID="DDL1P" runat="server" CssClass="styledDropdown" required AutoPostBack="True">
+              <asp:ListItem Text="-- Select --" Value="" />
+            </asp:DropDownList>
+
+            <asp:Label ID="Label4" runat="server" Text="CITY" ></asp:Label>
+            <asp:DropDownList ID="DDL2P" runat="server" CssClass="styledDropdown" required AutoPostBack="True">
+              <asp:ListItem Text="-- Select --" Value="" />
+            </asp:DropDownList>
+
+             <asp:Label ID="Label5" runat="server" Text="PINCODE"></asp:Label>
+            <asp:TextBox ID="txtPINCODEP" runat="server" CssClass="styledTextbox" placeholder="Enter Pincode"  required></asp:TextBox>
+
+             <asp:Label ID="Label6" runat="server" Text="PHONE NUMBER"></asp:Label>
+            <asp:TextBox ID="txtPHNOP" runat="server" CssClass="styledTextbox" placeholder="Enter Phone Number"  required></asp:TextBox>
+
+            
+            <hr />
+
+            <asp:Button ID="BT1P" runat="server" Text="SUBMIT"  CssClass="registerbtn" />
+
+            <br />
+             <asp:GridView ID="GVP" runat="server" AllowPaging="True" CellPadding="4" ForeColor="#333333" GridLines="None" PageIndex="2" PageSize="2" Width="400px">
                     <AlternatingRowStyle BackColor="White" />
                     <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
                     <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
@@ -147,8 +110,7 @@
                     <SortedDescendingCellStyle BackColor="#FCF6C0" />
                     <SortedDescendingHeaderStyle BackColor="#820000" />
                 </asp:GridView>
-                <br />
-            </td>
-        </tr>
-    </table>
+             <br />
+        </div>
+    </div>
 </asp:Content>

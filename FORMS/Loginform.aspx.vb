@@ -6,8 +6,7 @@ Public Class Loginform1
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
     End Sub
-
-    Protected Sub BT1LO_Click(sender As Object, e As EventArgs) Handles bt1LO.Click, bt1LO.Click, bt1LO.Click, bt1LO.Click
+    Protected Sub BT1LO_Click(sender As Object, e As EventArgs) Handles bt1LO.Click, bt1LO.Click, bt1LO.Click, bt1LO.Click, bt1LO.Click, bt1LO.Click
         If RBLUSER.Checked = True Then
             Dim str As String
             str = "SELECT * FROM  User_table WHERE Email = '" + txtEMAILO.Text + "' AND Password = '" + txtPASSLO.Text + "' "
@@ -15,6 +14,8 @@ Public Class Loginform1
             Dim sqldaC As SqlDataAdapter = New SqlDataAdapter(com)
             Dim ds As DataTable = New DataTable
             sqldaC.Fill(ds)
+            Dim user_id As String = ds.Rows(0)(0).ToString()
+            Session("user_id") = user_id
             If ds.Rows.Count > 0 Then
                 Response.Redirect("FRMuser.aspx")
             Else
@@ -34,9 +35,6 @@ Public Class Loginform1
 
             End If
         End If
-
-
-
     End Sub
 
     Protected Sub LB2_Click(sender As Object, e As EventArgs) Handles LB2.Click

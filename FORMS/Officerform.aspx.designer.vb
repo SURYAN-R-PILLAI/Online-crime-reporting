@@ -23,15 +23,6 @@ Partial Public Class Officerform
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Label2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''txtRANKO control.
     '''</summary>
     '''<remarks>
@@ -41,13 +32,13 @@ Partial Public Class Officerform
     Protected WithEvents txtRANKO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label4 control.
+    '''Label2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtNAMEO control.
@@ -59,13 +50,13 @@ Partial Public Class Officerform
     Protected WithEvents txtNAMEO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label9 control.
+    '''Label3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''DDL3O control.
@@ -77,13 +68,13 @@ Partial Public Class Officerform
     Protected WithEvents DDL3O As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Label5 control.
+    '''Label4 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''DDL1O control.
@@ -95,13 +86,13 @@ Partial Public Class Officerform
     Protected WithEvents DDL1O As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Label6 control.
+    '''Label5 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtMNO control.
@@ -113,13 +104,13 @@ Partial Public Class Officerform
     Protected WithEvents txtMNO As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label7 control.
+    '''Label6 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''DDL2O control.
@@ -131,13 +122,13 @@ Partial Public Class Officerform
     Protected WithEvents DDL2O As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Label8 control.
+    '''Label7 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label8 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtEMAILO control.

@@ -7,7 +7,6 @@ Public Class Complaintsubmissionform
         If Not Me.IsPostBack Then
             bindUser()
             bindLocation()
-            bindgrid()
         End If
 
     End Sub
@@ -36,7 +35,6 @@ Public Class Complaintsubmissionform
 
         sqlda.Fill(ds)
         DDL1C.Items.Clear()
-        DDL1C.Items.Add("--Select--")
         DDL1C.DataTextField = "First_name"
         DDL1C.DataValueField = "User_id"
         DDL1C.DataSource = ds
@@ -51,26 +49,9 @@ Public Class Complaintsubmissionform
         Dim ds As DataTable = New DataTable
         sqlda.Fill(ds)
         DDL2C.Items.Clear()
-        DDL2C.Items.Add("--Select--")
         DDL2C.DataTextField = "Location_name"
         DDL2C.DataValueField = "Location_id"
         DDL2C.DataSource = ds
         DDL2C.DataBind()
-    End Sub
-    Public Sub bindgrid()
-
-        Dim ap As DataTable = New DataTable
-        Dim str As String
-        str = "select Full_name,Email,Phone_number,Subject,Place_of_occurrence,Date_of_occurrence,Police_station,Description from Complaint_table"
-        Dim cmd As SqlCommand = New SqlCommand(str, co.connect())
-        Dim ad As SqlDataAdapter = New SqlDataAdapter(cmd)
-        ad.Fill(ap)
-        GVC.DataSource = ap
-        GVC.DataBind()
-
-    End Sub
-    Protected Sub GVC_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles GVC.PageIndexChanging
-        GVC.PageIndex = e.NewPageIndex
-        Me.bindgrid()
     End Sub
 End Class

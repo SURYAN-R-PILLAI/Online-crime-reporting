@@ -32,7 +32,6 @@ Public Class Stationform
         Dim ds As DataTable = New DataTable
         sqlda.Fill(ds)
         DDL2S.Items.Clear()
-        DDL2S.Items.Add("--Select--")
         DDL2S.DataTextField = "Location_name"
         DDL2S.DataValueField = "Location_id"
         DDL2S.DataSource = ds
@@ -45,8 +44,6 @@ Public Class Stationform
         Dim sqldad As SqlDataAdapter = New SqlDataAdapter(comnn)
         Dim ds3 As DataTable = New DataTable
         sqldad.Fill(ds3)
-        DDL1S.Items.Clear()
-        DDL1S.Items.Add("--Select--")
         DDL1S.DataTextField = "City_name"
         DDL1S.DataValueField = "City_id"
         DDL1S.DataSource = ds3

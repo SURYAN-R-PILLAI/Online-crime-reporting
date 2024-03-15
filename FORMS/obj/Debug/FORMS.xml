@@ -6,303 +6,7 @@ FORMS
 </name>
 </assembly>
 <members>
-<member name="F:FORMS.userreg.Head1">
-	<summary>
-Head1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel1">
-	<summary>
-Panel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtFNU">
-	<summary>
-txtFNU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel17">
-	<summary>
-Panel17 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtLNU">
-	<summary>
-txtLNU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel2">
-	<summary>
-Panel2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtEMAILU">
-	<summary>
-txtEMAILU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel15">
-	<summary>
-Panel15 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtPHNOU">
-	<summary>
-txtPHNOU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel19">
-	<summary>
-Panel19 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtDOBU">
-	<summary>
-txtDOBU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel20">
-	<summary>
-Panel20 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtAADHARU">
-	<summary>
-txtAADHARU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel3">
-	<summary>
-Panel3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel4">
-	<summary>
-Panel4 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel5">
-	<summary>
-Panel5 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.RB1USER">
-	<summary>
-RB1USER control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel6">
-	<summary>
-Panel6 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.RB2USER">
-	<summary>
-RB2USER control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel7">
-	<summary>
-Panel7 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtHNU">
-	<summary>
-txtHNU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel21">
-	<summary>
-Panel21 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.DDL3U">
-	<summary>
-DDL3U control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel22">
-	<summary>
-Panel22 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.DDL1U">
-	<summary>
-DDL1U control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel23">
-	<summary>
-Panel23 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.DDL2U">
-	<summary>
-DDL2U control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel8">
-	<summary>
-Panel8 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtPINCODEU">
-	<summary>
-txtPINCODEU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel9">
-	<summary>
-Panel9 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtPASSU">
-	<summary>
-txtPASSU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel10">
-	<summary>
-Panel10 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.txtCPASSU">
-	<summary>
-txtCPASSU control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.Panel16">
-	<summary>
-Panel16 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.userreg.BTN1U">
-	<summary>
-BTN1U control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.Arrestform.Label1">
+<member name="F:FORMS.Arrestform.Label1">
 	<summary>
 Label1 control.
 </summary>
@@ -446,14 +150,6 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Locationform.Label2">
-	<summary>
-Label2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:FORMS.Locationform.txtLNL">
 	<summary>
 txtLNL control.
@@ -462,9 +158,9 @@ txtLNL control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Locationform.Label3">
+</member><member name="F:FORMS.Locationform.Label2">
 	<summary>
-Label3 control.
+Label2 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -478,9 +174,9 @@ DDL1L control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Locationform.Label4">
+</member><member name="F:FORMS.Locationform.Label3">
 	<summary>
-Label4 control.
+Label3 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -494,9 +190,9 @@ DDL2L control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Locationform.Label5">
+</member><member name="F:FORMS.Locationform.Label4">
 	<summary>
-Label5 control.
+Label4 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -510,9 +206,9 @@ txtPINCODEL control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Locationform.Label6">
+</member><member name="F:FORMS.Locationform.Label5">
 	<summary>
-Label6 control.
+Label5 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -550,14 +246,6 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Stationform.Label2">
-	<summary>
-Label2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:FORMS.Stationform.txtSNS">
 	<summary>
 txtSNS control.
@@ -566,9 +254,9 @@ txtSNS control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Stationform.Label3">
+</member><member name="F:FORMS.Stationform.Label2">
 	<summary>
-Label3 control.
+Label2 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -582,9 +270,9 @@ txtSES control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Stationform.Label4">
+</member><member name="F:FORMS.Stationform.Label3">
 	<summary>
-Label4 control.
+Label3 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -598,9 +286,9 @@ DDL1S control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Stationform.Label5">
+</member><member name="F:FORMS.Stationform.Label4">
 	<summary>
-Label5 control.
+Label4 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -614,9 +302,9 @@ DDL2S control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Stationform.Label6">
+</member><member name="F:FORMS.Stationform.Label5">
 	<summary>
-Label6 control.
+Label5 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -630,9 +318,9 @@ txtPHNOS control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Stationform.Label7">
+</member><member name="F:FORMS.Stationform.Label6">
 	<summary>
-Label7 control.
+Label6 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -657,6 +345,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:FORMS.Stationform.GVS">
 	<summary>
 GVS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.Complainants.Head1">
+	<summary>
+Head1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -729,6 +425,30 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:FORMS.Districtform.BTN1DI">
 	<summary>
 BTN1DI control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.Complaintview.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.Complaintview.GVCV">
+	<summary>
+GVCV control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.Crimereporting.Head1">
+	<summary>
+Head1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -991,14 +711,6 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Officerform.Label2">
-	<summary>
-Label2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:FORMS.Officerform.txtRANKO">
 	<summary>
 txtRANKO control.
@@ -1007,9 +719,9 @@ txtRANKO control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Officerform.Label4">
+</member><member name="F:FORMS.Officerform.Label2">
 	<summary>
-Label4 control.
+Label2 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1023,9 +735,9 @@ txtNAMEO control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Officerform.Label9">
+</member><member name="F:FORMS.Officerform.Label3">
 	<summary>
-Label9 control.
+Label3 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1039,9 +751,9 @@ DDL3O control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Officerform.Label5">
+</member><member name="F:FORMS.Officerform.Label4">
 	<summary>
-Label5 control.
+Label4 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1055,9 +767,9 @@ DDL1O control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Officerform.Label6">
+</member><member name="F:FORMS.Officerform.Label5">
 	<summary>
-Label6 control.
+Label5 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1071,9 +783,9 @@ txtMNO control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Officerform.Label7">
+</member><member name="F:FORMS.Officerform.Label6">
 	<summary>
-Label7 control.
+Label6 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1087,9 +799,9 @@ DDL2O control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Officerform.Label8">
+</member><member name="F:FORMS.Officerform.Label7">
 	<summary>
-Label8 control.
+Label7 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1127,14 +839,6 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Policedeptform.Label2">
-	<summary>
-Label2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:FORMS.Policedeptform.txtCAP">
 	<summary>
 txtCAP control.
@@ -1143,9 +847,9 @@ txtCAP control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Policedeptform.Label3">
+</member><member name="F:FORMS.Policedeptform.Label2">
 	<summary>
-Label3 control.
+Label2 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1159,9 +863,9 @@ txtHNP control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Policedeptform.Label4">
+</member><member name="F:FORMS.Policedeptform.Label3">
 	<summary>
-Label4 control.
+Label3 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1175,9 +879,9 @@ DDL1P control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Policedeptform.Label5">
+</member><member name="F:FORMS.Policedeptform.Label4">
 	<summary>
-Label5 control.
+Label4 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1191,9 +895,9 @@ DDL2P control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Policedeptform.Label6">
+</member><member name="F:FORMS.Policedeptform.Label5">
 	<summary>
-Label6 control.
+Label5 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1207,9 +911,9 @@ txtPINCODEP control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Policedeptform.Label7">
+</member><member name="F:FORMS.Policedeptform.Label6">
 	<summary>
-Label7 control.
+Label6 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1239,22 +943,6 @@ GVP control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.Label1">
-	<summary>
-Label1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.Label2">
-	<summary>
-Label2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:FORMS.Complaintsubmissionform.Label3">
 	<summary>
 Label3 control.
@@ -1263,17 +951,17 @@ Label3 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.Label4">
+</member><member name="F:FORMS.Complaintsubmissionform.DDL1C">
 	<summary>
-Label4 control.
+DDL1C control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.DDL1C">
+</member><member name="F:FORMS.Complaintsubmissionform.Label4">
 	<summary>
-DDL1C control.
+Label4 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1295,17 +983,17 @@ Label5 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.Label6">
+</member><member name="F:FORMS.Complaintsubmissionform.txtPHNOC">
 	<summary>
-Label6 control.
+txtPHNOC control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.txtPHNOC">
+</member><member name="F:FORMS.Complaintsubmissionform.Label6">
 	<summary>
-txtPHNOC control.
+Label6 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1319,14 +1007,6 @@ txtFNC control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.Label7">
-	<summary>
-Label7 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:FORMS.Complaintsubmissionform.Label8">
 	<summary>
 Label8 control.
@@ -1335,17 +1015,17 @@ Label8 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.Label9">
+</member><member name="F:FORMS.Complaintsubmissionform.txtSUBJECTC">
 	<summary>
-Label9 control.
+txtSUBJECTC control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.txtSUBJECTC">
+</member><member name="F:FORMS.Complaintsubmissionform.Label9">
 	<summary>
-txtSUBJECTC control.
+Label9 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1367,17 +1047,17 @@ Label10 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.Label11">
+</member><member name="F:FORMS.Complaintsubmissionform.txtDOC">
 	<summary>
-Label11 control.
+txtDOC control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.txtDOC">
+</member><member name="F:FORMS.Complaintsubmissionform.Label11">
 	<summary>
-txtDOC control.
+Label11 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1426,14 +1106,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:FORMS.Complaintsubmissionform.BT1C">
 	<summary>
 BT1C control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FORMS.Complaintsubmissionform.GVC">
-	<summary>
-GVC control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1871,17 +1543,305 @@ btn1PR control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Teamassignform.Label1">
+</member><member name="F:FORMS.userreg.Head1">
 	<summary>
-Label1 control.
+Head1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Teamassignform.Label2">
+</member><member name="F:FORMS.userreg.form1">
 	<summary>
-Label2 control.
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtFNU">
+	<summary>
+txtFNU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel17">
+	<summary>
+Panel17 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtLNU">
+	<summary>
+txtLNU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel2">
+	<summary>
+Panel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtEMAILU">
+	<summary>
+txtEMAILU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel15">
+	<summary>
+Panel15 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtPHNOU">
+	<summary>
+txtPHNOU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel19">
+	<summary>
+Panel19 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtDOBU">
+	<summary>
+txtDOBU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel20">
+	<summary>
+Panel20 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtAADHARU">
+	<summary>
+txtAADHARU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel3">
+	<summary>
+Panel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel4">
+	<summary>
+Panel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel5">
+	<summary>
+Panel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.RB1USER">
+	<summary>
+RB1USER control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel6">
+	<summary>
+Panel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.RB2USER">
+	<summary>
+RB2USER control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel7">
+	<summary>
+Panel7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtHNU">
+	<summary>
+txtHNU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel21">
+	<summary>
+Panel21 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.DDL3U">
+	<summary>
+DDL3U control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel22">
+	<summary>
+Panel22 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.DDL1U">
+	<summary>
+DDL1U control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel23">
+	<summary>
+Panel23 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.DDL2U">
+	<summary>
+DDL2U control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel8">
+	<summary>
+Panel8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtPINCODEU">
+	<summary>
+txtPINCODEU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel9">
+	<summary>
+Panel9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtPASSU">
+	<summary>
+txtPASSU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel10">
+	<summary>
+Panel10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.txtCPASSU">
+	<summary>
+txtCPASSU control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.Panel16">
+	<summary>
+Panel16 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.userreg.BTN1U">
+	<summary>
+BTN1U control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FORMS.Teamassignform.Label1">
+	<summary>
+Label1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1895,9 +1855,9 @@ txtCAT control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Teamassignform.Label3">
+</member><member name="F:FORMS.Teamassignform.Label2">
 	<summary>
-Label3 control.
+Label2 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1911,9 +1871,9 @@ DDL1T control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Teamassignform.Label6">
+</member><member name="F:FORMS.Teamassignform.Label3">
 	<summary>
-Label6 control.
+Label3 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1927,9 +1887,9 @@ txtTHT control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Teamassignform.Label7">
+</member><member name="F:FORMS.Teamassignform.Label4">
 	<summary>
-Label7 control.
+Label4 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1943,9 +1903,9 @@ DDL2T control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Teamassignform.Label8">
+</member><member name="F:FORMS.Teamassignform.Label5">
 	<summary>
-Label8 control.
+Label5 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1959,9 +1919,9 @@ txtEMAILT control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FORMS.Teamassignform.Label9">
+</member><member name="F:FORMS.Teamassignform.Label6">
 	<summary>
-Label9 control.
+Label6 control.
 </summary>
 	<remarks>
 Auto-generated field.

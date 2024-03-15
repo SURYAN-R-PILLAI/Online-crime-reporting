@@ -84,6 +84,7 @@
     <Content Include="Arrestform.aspx" />
     <Content Include="Cityform.aspx" />
     <Content Include="Complaintsubmissionform.aspx" />
+    <Content Include="Investigationview.aspx" />
     <Content Include="Courtform.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-grid.css" />
@@ -226,6 +227,13 @@
     </Compile>
     <Compile Include="Complaintsubmissionform.aspx.vb">
       <DependentUpon>Complaintsubmissionform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Investigationview.aspx.designer.vb">
+      <DependentUpon>Investigationview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Investigationview.aspx.vb">
+      <DependentUpon>Investigationview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Courtform.aspx.designer.vb">
